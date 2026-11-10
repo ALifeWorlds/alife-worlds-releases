@@ -2,7 +2,7 @@
 
 Created by **Itzel Juarez** and published by **ALife Worlds**. ALife Worlds gives a Codex project a visual world for its agents, assignments and recorded activity.
 
-Download [the plugin ZIP](packages/alife-worlds-0.4.8.zip) and compare its SHA-256 digest with [SHA256SUMS](packages/SHA256SUMS). Extract the archive to find the installation guide, plugin source, tests, license and asset notices. Each project configures its own world and private Site pairing.
+Download [the plugin ZIP](packages/alife-worlds-0.4.8.zip) and compare its SHA-256 digest with [SHA256SUMS](packages/SHA256SUMS). Follow the [Windows installation steps](README.md#install-in-codex-on-windows) and [private world setup](README.md#create-your-private-world). The ZIP also includes the source, tests, license and asset notices. Each project configures its own world and private Site pairing.
 
 This candidate includes the live QA list rule, scrollable dashboard lists, retained assignment panels, faster input-request clearance, passive below-room labels for the Site template, and improved ant emergence. Its qualified source passed 637 checks. One Windows symlink fixture was skipped.
 
