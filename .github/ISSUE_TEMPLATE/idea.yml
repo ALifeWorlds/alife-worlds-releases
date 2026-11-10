@@ -1,0 +1,11 @@
+name: Suggest an improvement
+description: Describe an improvement to the plugin or world
+title: "[Idea] "
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to improve?
+      description: Tell us who it helps and how you would check the result.
+    validations:
+      required: true

@@ -1,0 +1,17 @@
+name: Report a bug
+description: Report a reproducible problem in a release candidate
+title: "[Bug] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Plugin version
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: What happened?
+      description: Include expected behavior and reproduction steps. Omit private project data.
+    validations:
+      required: true
