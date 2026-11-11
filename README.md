@@ -96,8 +96,8 @@ If the download step finished but you still need to install the plugin, use eith
 **Through the Codex app**
 
 1. Open the Codex desktop app.
-2. In the message box, type **`/Alife worlds`**.
-3. Select **ALife Worlds** from the results.
+2. In the message box, type **`/alife`**.
+3. Select **ALife Worlds → create-world** (`$alife-worlds:create-world`) from the results.
 4. Choose **Install** if Codex asks.
 5. Check **Plugins** in the sidebar.
 
@@ -146,7 +146,7 @@ The character options control who appears in the world. They do not remove exist
 
 Type `/alife` and select **ALife Worlds → create-world**, or begin directly with `$alife-worlds:create-world`. Then describe your project, scene, references and characters. For example:
 
-> /Alife worlds
+> $alife-worlds:create-world
 >
 > Create an owner-private world for this project using the references I will upload in a folder or as separate files. Make my custom scene the one that opens and keep the default world as a backup. Show Dot + agents on screen. Reuse suitable existing agents and preserve their work, settings and privacy. If my Dot’s avatar is unavailable, ask for its picture before using a substitute.
 
