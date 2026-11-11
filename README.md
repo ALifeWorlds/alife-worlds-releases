@@ -27,13 +27,13 @@ The download above is the installable plugin ZIP. The [release guide](RELEASE.md
 
 Already installed? Open **Codex → Plugins** and look for **ALife Worlds**. Then go to [Create your private world](#create-your-private-world).
 
-For a first install, you need these three apps.
+Install Node.js and Codex CLI for the download step. For the app option, install Codex desktop too.
 
 - [Codex desktop](https://developers.openai.com/codex/app/) is where you chat and use your world.
 - [Node.js 20 or newer](https://nodejs.org/en/download) runs the plugin.
 - [Codex CLI](https://developers.openai.com/codex/cli/) is the version of Codex that opens in a terminal.
 
-Use the same Windows account for all three.
+Use the same Windows account and Codex profile for both installation options. Do the download step below once, then choose either the app or the CLI.
 
 ### 1. Download the plugin
 
@@ -71,17 +71,33 @@ Keep the folder these commands create. Codex uses it to find the plugin.
 
 If PowerShell says the release folder already exists, check **Codex → Plugins** first. If the download was interrupted, keep that folder and use a new folder name on the `$release` line before trying again.
 
-### 2. Install ALife Worlds
+### 2. Choose how to install
 
-Open Codex desktop. In the message box, type **`/Alife worlds`**. Include the slash at the start.
+Use either option after the download step above.
 
-Select **ALife Worlds** from the results. If Codex asks you to install it, choose **Install**.
+#### Option A — Codex app
 
-### 3. Look for the plugin
+1. Open the Codex desktop app.
+2. In the message box, type **`/Alife worlds`**. Include the slash.
+3. Select **ALife Worlds** from the results.
+4. If Codex asks you to install it, choose **Install**.
+5. Click **Plugins** in the sidebar. Watch for **ALife Worlds** to appear as installed and turned on.
 
-Click **Plugins** in the Codex sidebar.
+If it hasn’t appeared yet, close and reopen Codex using the same profile.
 
-Watch for **ALife Worlds** to appear. Make sure it is installed and turned on. If it hasn’t appeared yet, close and reopen the app using the same Codex profile.
+#### Option B — Codex CLI
+
+In the same PowerShell window, paste this command and press Enter.
+
+```powershell
+codex plugin add alife-worlds@alife-worlds-releases
+```
+
+Wait for the command to finish and show that the plugin was installed.
+
+If you also use the desktop app, open **Codex → Plugins** and watch for **ALife Worlds** to appear. Use the same profile you used in PowerShell.
+
+After either option, follow **Create your private world** below.
 
 ## Create your private world
 
