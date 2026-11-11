@@ -1,6 +1,6 @@
 # ALife Worlds
 
-ALife Worlds is a Codex plugin for making interactive worlds from pictures, your own artwork, or a few words. Build a place for a story or a small game, or give the agents in your project a place to work. You can start with the default world, bring an existing project, or build a world with no agents at all.
+ALife Worlds is a Codex plugin for making interactive worlds from pictures, your own artwork, or a few words. Build a place for a story or a small game, or give the agents in your project a place to work. You can start with the default world, bring an existing project, or choose which characters appear in the world.
 
 [Visit ALife Worlds](https://alifeworlds.com/) · [See the starting prompt](https://alifeworlds.com/how-it-works) · [Install in Codex](#install-in-codex-on-windows) · [Create your private world](#create-your-private-world) · [Download the release](#download-the-release-candidate) · [Report a bug or suggest an idea](https://github.com/ALifeWorlds/alife-worlds-releases/issues/new/choose)
 
@@ -20,7 +20,7 @@ ALife Worlds is a Codex plugin for making interactive worlds from pictures, your
 ## What you can do
 
 - **Make the world yours.** Describe a setting or supply reference artwork in Codex. Start with a scene you can explore, then ask for changes to its appearance and interactions.
-- **See when your team needs you.** In the colony, each connected agent has a room. When an agent asks for input, its ant shows that state. Open the activity list to see the latest recorded work.
+- **See when your team needs you.** In the default world, each connected agent has a room. When an agent asks for input, its ant shows that state. Open the activity list to see the latest recorded work.
 - **Follow a sprint.** Check the goal, next action, blockers, and outstanding QA on a task card. Expand a sprint to see the tasks behind its progress.
 - **Reuse rules across worlds.** At the bottom of the sprint section, open **Rules** to copy or export plugin and world rules. Review them in the destination project before importing them.
 
@@ -30,9 +30,9 @@ Created by **[Itzel Juarez](https://github.com/ItzelJuarez)**. Official plugin r
 
 ## Download the release candidate
 
-**[Download ALife Worlds v0.4.11-rc.1 (.zip)](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.11-rc.1/alife-worlds-0.4.11.zip)** · [Release notes](https://github.com/ALifeWorlds/alife-worlds-releases/releases/tag/v0.4.11-rc.1) · [SHA-256 checksum](packages/SHA256SUMS)
+**[Download ALife Worlds v0.4.13-rc.1 (.zip)](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.13-rc.1/alife-worlds-0.4.13.zip)** · [Release notes](https://github.com/ALifeWorlds/alife-worlds-releases/releases/tag/v0.4.13-rc.1) · [SHA-256 checksum](packages/SHA256SUMS)
 
-The release tag is **v0.4.11-rc.1**. The plugin inside the ZIP reports **0.4.11**.
+The release tag is **v0.4.13-rc.1**. The plugin inside the ZIP reports **0.4.13**.
 
 The download above is the installable plugin ZIP. The [release guide](RELEASE.md) lists the changes in this candidate.
 
@@ -57,16 +57,16 @@ You need [Node.js 20 or newer](https://nodejs.org/en/download) and [Codex CLI](h
 
 ```powershell
 $ErrorActionPreference = 'Stop'
-$release = Join-Path $env:LOCALAPPDATA 'ALifeWorlds\releases\v0.4.11-rc.1'
+$release = Join-Path $env:LOCALAPPDATA 'ALifeWorlds\releases\v0.4.13-rc.1'
 $plugin = Join-Path $release 'plugins\alife-worlds'
 $catalog = Join-Path $release '.agents\plugins'
 if (Test-Path -LiteralPath $release) { throw "The release folder already exists: $release. Use a new empty folder or register the existing installation." }
 New-Item -ItemType Directory -Path $plugin, $catalog | Out-Null
 
-$zip = Join-Path $release 'alife-worlds-0.4.11.zip'
-$url = 'https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.11-rc.1/alife-worlds-0.4.11.zip'
+$zip = Join-Path $release 'alife-worlds-0.4.13.zip'
+$url = 'https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.13-rc.1/alife-worlds-0.4.13.zip'
 Invoke-WebRequest -UseBasicParsing -Uri $url -OutFile $zip
-$expected = '2fea344a3acb773108890c5b1bc6be3b52d4416cea2f78d47780afdfd56c68ba'
+$expected = 'e19b8e59dcb7b52d20195dc3ef2dce375c8b6060082a6d18e20459777f2479a2'
 if ((Get-FileHash -LiteralPath $zip -Algorithm SHA256).Hash -ne $expected) { throw 'Checksum mismatch. Stop here.' }
 Expand-Archive -LiteralPath $zip -DestinationPath $plugin
 
@@ -115,99 +115,51 @@ Wait for it to finish. If you use the desktop app, look for **ALife Worlds** und
 
 ## Create your private world
 
-Allow about **20–40 minutes** to generate a world, especially when it needs new artwork. Keep the chat open and check for setup approvals.
+Allow about **20–40 minutes** when your world needs new artwork. You can start with your own custom world and keep the default world as a backup.
 
-You can ask for a custom world from the start. Describe the place you want or supply pictures. Ask Codex to make that custom world the one you open, with the default ant world kept as a backup.
+### 1. Open your project
 
-For a world with only your Dot, read [the Dot-only request](#request-a-world-with-only-your-dot) before starting.
+Choose a new empty folder or the project folder you already use.
 
-First, choose a folder for your world.
+- **Codex app:** open that folder as a project, then start a chat there. If asked to trust the folder, check its name first.
+- **Codex CLI:** open PowerShell in that folder, run `codex`, then use its project chat.
 
-- **Start fresh.** Make an empty folder.
-- **Use an existing project.** Choose the folder where you already work.
-- **Use pictures or notes.** Put them in a folder inside your project, such as `references/`.
+The same world request is used in either place. Setup needs Codex’s project and chat tools; if your CLI does not provide them, continue that project’s setup in the desktop app.
 
-Then choose the app or CLI steps below.
+### 2. Make one starting prompt
 
-### Option A — Create in the Codex app
+1. Open [Create your world on the ALife Worlds website](https://alifeworlds.com/how-it-works#start).
+2. Choose **New project** or **Existing project**.
+3. Choose **Default world**, **Describe a world**, or **Use my references**.
+4. Choose who appears on screen: **Dot + agents**, **Dot only**, or **Agents only**.
+5. Click **Copy world prompt**. Paste it into your Codex project chat and send it. The prompt already begins with **`/Alife worlds`**; there is no separate invocation step.
 
-1. Open Codex desktop.
-2. Choose **File → Open Folder** and open your project folder.
-3. Start a chat inside that project.
-4. Type **`/Alife worlds`** in the message box and select **ALife Worlds**.
-5. Send one of the example requests below, or write your own.
+For your own artwork, the prompt says to use the references you will upload. Add everything in one folder and give Codex its path, or attach files separately in the same chat. You do not need to make a document. Include your Dot’s avatar picture if Codex cannot access it.
 
-If Codex asks **Trust this folder?**, check the folder name and choose **Trust folder** if you want to use it.
+The character options control who appears in the world. They do not remove existing chats or change settings. The standard plugin may still use its three world-building roles behind the scenes. Automatic Dot/avatar access depends on the host and is not assumed.
 
-### Option B — Create in the Codex CLI
+<details>
+<summary>Prefer to write the request yourself?</summary>
 
-1. Open your project folder in Windows File Explorer.
-2. Click the address bar, type **PowerShell**, and press Enter. PowerShell opens in that folder.
-3. Type `codex` and press Enter.
-4. Inside Codex, type `/skills` and choose **alife-worlds:create-world**.
-5. Send one of the example requests below, or write your own.
+Begin with `/Alife worlds`, then describe the project, scene, references and characters you want. For example:
 
-World setup needs Codex’s project and chat tools. If the CLI says those tools are missing, continue the same setup in the Codex app. [Codex skill guide](https://developers.openai.com/codex/skills/)
+> /Alife worlds
+>
+> Create an owner-private world for this project using the references I will upload in a folder or as separate files. Make my custom scene the one that opens and keep the default world as a backup. Show Dot + agents on screen. Reuse suitable existing agents and preserve their work, settings and privacy. If my Dot’s avatar is unavailable, ask for its picture before using a substitute.
 
-### Choose a starting request
+You can change the character line to **Dot only** or **Agents only**.
 
-**New world**
+</details>
 
-> Create a private custom world for this project using my idea and references. Make the custom world the one that opens, and keep the default world as a backup. Use my approved agent settings at Standard speed. Open my world when it’s ready.
+Have an exported ALife world? Paste its complete `/import` content in the destination project chat and review the suggested changes.
 
-**Existing project**
+### 3. Follow the setup
 
-> Connect this project to an ALife World. Reuse my existing agents and keep their work and settings. Open the world when it’s ready.
+Keep the chat open and check for approvals. If another setup chat needs approval, open it and read the request before allowing it. Setup may save recovery progress in a folder named `.alife-project-operations` next to your project.
 
-**Pictures or notes**
+When setup is ready, open the world and check the project name and represented agents. To return later, ask the same project chat to open its existing ALife World.
 
-> Create a private world using the pictures and notes in my references folder. Use them to guide how the world looks. Use my approved agent settings at Standard speed.
-
-You can also attach pictures to your message.
-
-If you haven’t chosen settings for new agents, tell Codex which model and reasoning level you want it to use. You can choose the same settings you use for your chat.
-
-Have an exported ALife world? Paste its `/import` command in the project chat and review the changes it suggests.
-
-### Follow the setup
-
-The standard team setup uses three main chats, called **Director**, **Agent Support**, and **World Requests**.
-
-If a chat shows **Needs approval**, open it and read the request. Click **Allow once** for a step you approve. One request may ask to save setup progress in `.alife-project-operations`, a folder next to your project.
-
-When setup says it is ready, open your world and check that it shows your project and agents.
-
-To come back later, ask in that project’s chat.
-
-> Open this project’s existing ALife World.
-
-## Request a world with only your Dot
-
-**Check this before starting.** The standard setup in v0.4.11-rc.1 creates three core chats. A working Dot-only setup and automatic avatar import have not been verified for this release.
-
-1. Open the conversation with your existing Dot.
-2. Attach the picture you want to use as your Dot’s avatar. You can also put it in your project folder, such as `references/dot-avatar.png`, and give the chat that path.
-3. Tell your Dot which project folder this world belongs to.
-4. If ALife Worlds is available in that chat, select it.
-5. Copy and send the request below before starting the standard setup.
-
-> I want a private ALife World with only my existing Dot and its avatar. Use the avatar image I supplied and keep my Dot’s name. Keep the working team limited to this Dot. Do not create Director, Agent Support, World Requests, or other agent chats. Check whether this version supports that setup first. If it needs more agents, stop and explain the limit.
-
-An avatar image supplies the character’s appearance. Ask the chat to confirm any live Dot connection before showing its activity.
-
-For help with Dot itself, see the [Dot guide](https://learn.chatgpt.com/docs/dots).
-
-## Get a starting prompt from the website
-
-A prompt is the message you send to Codex to describe what you want.
-
-1. Open the [ALife Worlds starting prompt](https://alifeworlds.com/how-it-works).
-2. Scroll to **What will your world be?**
-3. Click **Copy starting prompt**.
-4. Return to your project chat and select ALife Worlds using the app or CLI steps above.
-5. Paste the prompt. Add your own idea, pictures, or reference folder, then send it.
-
-You can read more examples for [using your artwork](https://alifeworlds.com/how-it-works/#your-art) or [connecting an existing team](https://alifeworlds.com/how-it-works/#existing-team).
+To plan what to build, use the website’s [three-step goal and sprint planner](https://alifeworlds.com/how-it-works#sprints). Its visual example changes only in your browser; it does not change your real project.
 
 ## Open your world on a private website
 
