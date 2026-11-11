@@ -25,9 +25,24 @@ The download above is the installable plugin ZIP. The [release guide](RELEASE.md
 
 ## Install in Codex on Windows
 
-You’ll need Codex desktop, the Codex CLI, and Node.js 20 or later. Use the same Windows account and Codex profile for the CLI and the desktop app. If ALife Worlds is already installed, go straight to step 3. [Codex desktop setup](https://developers.openai.com/codex/app/) · [Codex CLI setup](https://developers.openai.com/codex/cli/) · [Node.js downloads](https://nodejs.org/en/download)
+Already installed? Open **Codex → Plugins** and look for **ALife Worlds**. Then go to [Create your private world](#create-your-private-world).
 
-**1. Add the release to your local catalog.** Run the following block in PowerShell once. It downloads the official ZIP, checks its SHA-256 checksum, and makes ALife Worlds available in the Codex plugin browser. Keep the release folder so Codex can find it.
+For a first install, you need these three apps.
+
+- [Codex desktop](https://developers.openai.com/codex/app/) is where you chat and use your world.
+- [Node.js 20 or newer](https://nodejs.org/en/download) runs the plugin.
+- [Codex CLI](https://developers.openai.com/codex/cli/) is the version of Codex that opens in a terminal.
+
+Use the same Windows account for all three.
+
+### 1. Download the plugin
+
+Open the Windows Start menu, search for **PowerShell**, and open it.
+
+Expand the box below. Copy all the commands, paste them into PowerShell, and press Enter. They download ALife Worlds and add it to the list of plugins you can install.
+
+<details>
+<summary>Show the commands to copy</summary>
 
 ```powershell
 $ErrorActionPreference = 'Stop'
@@ -50,29 +65,87 @@ codex plugin marketplace add "$release"
 if ($LASTEXITCODE -ne 0) { throw 'Catalog registration failed.' }
 ```
 
-**2. Install using `/plugins`.** In the same PowerShell window, enter `codex` to open Codex. At the Codex prompt, type **`/plugins`** with the leading slash and press Enter. Choose the **alife-worlds-releases** catalog, select **ALife Worlds**, and choose **Install**. [Codex slash-command guide](https://developers.openai.com/codex/cli/slash-commands/)
+Keep the folder these commands create. Codex uses it to find the plugin.
 
-**3. Watch for ALife Worlds in Codex desktop.** Open the desktop app and select **Plugins** in the sidebar. When **ALife Worlds** appears as installed and enabled, you’re ready to create. If the app was open during installation and the plugin hasn’t appeared, reopen the app under the same profile and check **Plugins** again.
+</details>
+
+If PowerShell says the release folder already exists, check **Codex → Plugins** first. If the download was interrupted, keep that folder and use a new folder name on the `$release` line before trying again.
+
+### 2. Install ALife Worlds
+
+In the same PowerShell window, type `codex` and press Enter.
+
+Once Codex opens, type **`/plugins`** and press Enter. Include the slash at the start.
+
+Choose **alife-worlds-releases**, select **ALife Worlds**, and choose **Install**.
+
+### 3. Open Codex desktop
+
+Open the Codex desktop app. Click **Plugins** in the sidebar.
+
+Watch for **ALife Worlds** to appear. Make sure it is installed and turned on. If it hasn’t appeared yet, close and reopen the app using the same Codex profile.
 
 ## Create your private world
 
-Choose how you want to start in Codex desktop.
+### 1. Choose your project
 
-- **Create a new project.** Make an empty folder for your world. Use **File → Open Folder** to open it in Codex, then start a chat inside that project.
-- **Bring an existing project.** Open its folder in Codex and start a chat there. Ask ALife Worlds to connect the project and reuse its existing agents. If you have an exported ALife world definition, paste its `/import` command in the destination project and review it there.
-- **Use a folder of references.** Put your artwork, screenshots, or notes in a folder inside the project. Give the chat its relative path, such as `references/`, and say what you want to use. You can also attach individual images to your message.
+Pick the option that fits your work.
 
-If Codex asks **Trust this folder?**, check the path and choose **Trust folder** if you want your agents to work there.
+- **Start fresh.** Make an empty folder. In Codex, choose **File → Open Folder** and open it.
+- **Use an existing project.** Open that project’s folder in Codex.
+- **Use your own pictures or notes.** Put them in a folder inside your project, such as `references/`. Tell the chat which folder to use. You can also attach pictures to your message.
 
-**Start creating.** In the project chat, select the ALife Worlds skill **`alife-worlds:create-world`**. Send a request in your own words, or copy the example below. Replace the bracketed fields with your preferred model and reasoning level. If you already have approved agent settings, say “use my approved settings” instead.
+Start a chat inside the project you chose. If Codex asks **Trust this folder?**, check that the folder is yours, then choose **Trust folder** if you want to use it.
 
-> Create a private world for this project. Start with the default world. For new core agents, I approve [model ID] with [reasoning level] at Standard speed. Open my world when it’s ready.
+Have an exported ALife world? Paste its `/import` command in this project’s chat and review the changes it suggests.
 
-For help writing your own request, open the Worlds page and choose **Copy starting prompt**. Edit it in your project chat before you send it. The website also has examples for using your art or connecting an existing team. [See and copy the starting prompt](https://alifeworlds.com/worlds/#prompt-starter) · [Use your artwork](https://alifeworlds.com/how-it-works/#your-art) · [Connect your existing team](https://alifeworlds.com/how-it-works/#existing-team)
+### 2. Ask ALife Worlds to create
 
-**What happens next.** On first setup, the current chat becomes the **Director**. If a core chat shows **Needs approval**, open that chat to review the requested action. Choose **Allow once** for a step you approve. On Windows, the setup helper may ask to record its progress in the `.alife-project-operations` folder alongside your project. The plugin sets up **Agent Support** and **World Requests** and registers the world for this folder. Once setup reports ready, open the local dashboard in Codex and check that the project and agents are yours. To return later, ask “Open this project’s existing ALife World.”
+In your project chat, select **ALife Worlds → create-world**. Its full name is `alife-worlds:create-world`.
 
-**Optional hosted Site.** If you want a private web address, enable Sites in your signed-in account. In the same project ask, “Create an owner-private Site for this world and pair only this project with it.” Complete the private pairing flow in your account. Check that you can open the Site while signed in as its owner and that a signed-out browser window asks you to sign in or denies access. Keep pairing credentials out of chat, Git and public issues.
+Tell it what you want to make. You can copy this example.
+
+> Create a private world for this project. Start with the default world. Use my approved agent settings at Standard speed. Open my world when it’s ready.
+
+If you haven’t chosen settings for new agents, tell Codex which model and reasoning level you want it to use. You can choose the same settings you use for your chat.
+
+### 3. Follow the setup
+
+ALife Worlds sets up three main chats, called **Director**, **Agent Support**, and **World Requests**.
+
+If a chat shows **Needs approval**, open it and read the request. Click **Allow once** for a step you approve. One request may ask to save setup progress in `.alife-project-operations`, a folder next to your project.
+
+When setup says it is ready, open your world and check that it shows your project and agents.
+
+To come back later, ask in that project’s chat.
+
+> Open this project’s existing ALife World.
+
+## Get a starting prompt from the website
+
+A prompt is the message you send to Codex to describe what you want.
+
+1. Open the [ALife Worlds starting prompt](https://alifeworlds.com/worlds/#prompt-starter).
+2. Scroll to **What will your world be?**
+3. Click **Copy starting prompt**.
+4. Return to your project chat in Codex and select **ALife Worlds → create-world**.
+5. Paste the prompt. Add your own idea, pictures, or reference folder, then send it.
+
+You can read more examples for [using your artwork](https://alifeworlds.com/how-it-works/#your-art) or [connecting an existing team](https://alifeworlds.com/how-it-works/#existing-team).
+
+## Open your world on a private website
+
+After your world works in Codex, you can give it its own private web address.
+
+1. Turn on the **Sites** plugin in Codex.
+2. In the same project chat, send the message below.
+3. Follow the sign-in and connection steps Codex shows.
+4. Open the new link and sign in with the account that owns the Site.
+5. Open that link in a private browser window while signed out. It should ask you to sign in or deny access.
+
+> Create a private website for this world. Give access only to my account and connect only this project.
+
+Keep your connection keys and private Site link out of public GitHub issues.
 
 ## Backups and liability
 
