@@ -62,12 +62,12 @@ This path was tested with Codex CLI 0.164.0 and Node.js 24 on Windows, starting 
 
 ## Create your private world
 
-1. In Codex desktop, add or open the local project folder where you want your world to live. An empty folder works for a first run. Start a new chat **inside that saved project**.
+1. In Codex desktop, add or open the local project folder where you want your world to live. An empty folder works for a first run. Start a new chat **inside that saved project**. If Codex shows **Trust this folder?**, check the path and choose **Trust folder** if you want agents to work there.
 2. In the chat’s skill picker, select **`alife-worlds:create-world`**. Paste the request below, replacing both bracketed fields with the model ID and reasoning level you want for the new agents. Then send it. If you already have approved agent settings, you can say “use my approved settings” instead.
 
    > Create a private local ALife World for this project using the default colony. For new core agents, I approve [model ID] with [reasoning level] at Standard speed. Open my world when it’s ready.
 
-3. On first setup, the current chat becomes the **Director**. The plugin sets up **Agent Support** and **World Requests** and registers the world for this folder. Once setup reports ready, open the local dashboard in Codex and check that the project and agents are yours. To return later, ask “Open this project’s existing ALife World.”
+3. On first setup, the current chat becomes the **Director**. If a core chat shows **Needs approval**, open that chat to review the requested action. Choose **Allow once** for a step you approve. On Windows, the setup helper may ask to record its progress in the `.alife-project-operations` folder alongside your project. The plugin sets up **Agent Support** and **World Requests** and registers the world for this folder. Once setup reports ready, open the local dashboard in Codex and check that the project and agents are yours. To return later, ask “Open this project’s existing ALife World.”
 4. **Optional hosted Site.** If you want a private web address, enable Sites in your signed-in account. In the same project ask, “Create an owner-private Site for this world and pair only this project with it.” Complete the private pairing flow in your account. Check that you can open the Site while signed in as its owner and that a signed-out browser window asks you to sign in or denies access. Keep pairing credentials out of chat, Git and public issues.
 
 ## Backups and liability
