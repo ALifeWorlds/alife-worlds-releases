@@ -164,7 +164,7 @@ Have an exported ALife world? Paste its complete `/import` content in the destin
 
 ### 3. Follow the setup
 
-Keep the chat open and check for approvals. If another setup chat needs approval, open it and read the request before allowing it. Setup may save recovery progress in a folder named `.alife-project-operations` next to your project.
+Keep the chat open and check for approvals. If another setup chat needs approval, open it and read the request before allowing it. Fresh setup saves its world files and progress inside the project’s ignored `.alife-worlds` folder.
 
 When setup is ready, open the world and check the project name and represented agents. To return later, ask the same project chat to open its existing ALife World.
 
@@ -191,6 +191,14 @@ Before using the plugin on important work or approving a cleanup or deletion, sa
 ALife Worlds is provided as is, without warranty. To the extent permitted by applicable law, the MIT License limits the liability of its authors and copyright holders, including original creator Itzel Juarez, for claims arising from use of the software. Examples include lost work, accidentally deleted projects, overwritten or corrupted files, and recovery costs. [License and explanatory note](LICENSE)
 
 Read our [help and support page](https://alifeworlds.com/support/), [privacy policy](https://alifeworlds.com/privacy/) and [software terms](https://alifeworlds.com/terms/).
+
+## Share your agents and worlds
+
+You can submit your own **agent definitions, world designs and world packages** for other people to import or reuse. [Submit a world or agent](https://github.com/ALifeWorlds/alife-worlds-releases/issues/new?template=share-world-agent.yml) through GitHub Issues. Include a preview, a public source or download link, your creator credit, the applicable license, the plugin version and clear import/setup steps.
+
+Submissions are reviewed before being described as official or compatible. Compatible agent/rule definitions use the supported **/import** workflow in the destination Codex project. World designs may also need their artwork and an implementation step; each shared world must explain what can be imported and what still needs building. There is no promise that an arbitrary world ZIP runs automatically. The [import/export guide](https://alifeworlds.com/how-it-works#import-export) explains the current alpha workflow.
+
+Share only material you have permission to distribute. Keep private chats, live agent identities, credentials, personal settings and private project data out of submissions. Importing a community definition does not connect someone else’s agents or grant it permission to run commands. The destination user reviews changes before applying them.
 
 ## Help improve the plugin
 

@@ -1,0 +1,46 @@
+name: Share a world or agent
+description: Submit reusable agents, world designs or world packages for community review
+title: "[Community] "
+body:
+  - type: markdown
+    attributes:
+      value: "This is a public submission. Share only material you may distribute. Leave out private chats, live agent bindings, credentials and personal project data. A submission is not automatic approval or a guarantee of compatibility."
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What are you sharing?
+      options:
+        - Agent definition
+        - World design or artwork
+        - World package
+        - Agents and world together
+    validations:
+      required: true
+  - type: textarea
+    id: preview
+    attributes:
+      label: Describe it and add a preview
+      description: Explain what others can use. Add a public screenshot if you have one.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source or download link
+      description: Share a public definition, repository or package. Do not link to a private dashboard.
+    validations:
+      required: true
+  - type: textarea
+    id: rights
+    attributes:
+      label: Creator credit and license
+      description: Name the creator and applicable licenses, including third-party art or code. Contributions do not transfer copyright.
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: Plugin version and import steps
+      description: List the supported version, exact steps, checks you actually ran and anything that still needs building. Do not describe untested compatibility as verified.
+    validations:
+      required: true
