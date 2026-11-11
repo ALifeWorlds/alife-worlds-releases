@@ -30,9 +30,9 @@ Created by **[Itzel Juarez](https://github.com/ItzelJuarez)**. Official plugin r
 
 ## Download the release candidate
 
-**[Download ALife Worlds v0.4.16-rc.1 (.zip)](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.16-rc.1/alife-worlds-0.4.16.zip)** · [Release notes](https://github.com/ALifeWorlds/alife-worlds-releases/releases/tag/v0.4.16-rc.1) · [SHA-256 checksum](packages/SHA256SUMS)
+**[Download ALife Worlds v0.4.16-rc (.zip)](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.16-rc/alife-worlds-0.4.16.zip)** · [Release notes](https://github.com/ALifeWorlds/alife-worlds-releases/releases/tag/v0.4.16-rc) · [SHA-256 checksum](packages/SHA256SUMS)
 
-The release tag is **v0.4.16-rc.1**. The plugin inside the ZIP reports **0.4.16**.
+The release tag is **v0.4.16-rc**. The plugin inside the ZIP reports **0.4.16**.
 
 The download above is the installable plugin ZIP. The [release guide](RELEASE.md) lists the changes in this candidate.
 
@@ -57,14 +57,14 @@ You need [Node.js 20 or newer](https://nodejs.org/en/download) and [Codex CLI](h
 
 ```powershell
 $ErrorActionPreference = 'Stop'
-$release = Join-Path $env:LOCALAPPDATA 'ALifeWorlds\releases\v0.4.16-rc.1'
+$release = Join-Path $env:LOCALAPPDATA 'ALifeWorlds\releases\v0.4.16-rc'
 $plugin = Join-Path $release 'plugins\alife-worlds'
 $catalog = Join-Path $release '.agents\plugins'
 if (Test-Path -LiteralPath $release) { throw "The release folder already exists: $release. Use a new empty folder or register the existing installation." }
 New-Item -ItemType Directory -Path $plugin, $catalog | Out-Null
 
 $zip = Join-Path $release 'alife-worlds-0.4.16.zip'
-$url = 'https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.16-rc.1/alife-worlds-0.4.16.zip'
+$url = 'https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.16-rc/alife-worlds-0.4.16.zip'
 Invoke-WebRequest -UseBasicParsing -Uri $url -OutFile $zip
 $expected = '5d922adfbfc8393e381c0e4c1406e5f17e3ce2e87f8593440c59a5d350d05ac5'
 if ((Get-FileHash -LiteralPath $zip -Algorithm SHA256).Hash -ne $expected) { throw 'Checksum mismatch. Stop here.' }
