@@ -1,10 +1,19 @@
 # ALife Worlds
 
-ALife Worlds is a Codex plugin that gives your agents a shared visual world. Each agent has a room in the colony. Ants reflect recorded activity, including when an agent is waiting for your input. The dashboard shows assignments, recent work, and sprint progress.
+ALife Worlds is a Codex plugin for making interactive worlds from pictures, your own artwork, or a few words. Build a place for a story or a small game, or give the agents in your project a place to work. You can start with the included ant colony, bring an existing project, or build a world with no agents at all.
 
-**Original creator:** [Itzel Juarez](https://github.com/ItzelJuarez)
+[Visit ALife Worlds](https://alifeworlds.com/) · [Install in Codex](#install-in-codex-on-windows) · [Create your private world](#create-your-private-world) · [Download the release](#download-the-release-candidate) · [Report a bug or suggest an idea](https://github.com/ALifeWorlds/alife-worlds-releases/issues/new/choose)
 
-**Publisher:** [ALife Worlds](https://github.com/ALifeWorlds)
+## What you can do
+
+- **Make the world yours.** Describe a setting or supply reference artwork in Codex. Start with a scene you can explore, then ask for changes to its appearance and interactions.
+- **See when your team needs you.** In the colony, each connected agent has a room. When an agent asks for input, its ant shows that state. Open the activity list to see the latest recorded work.
+- **Follow a sprint.** Check the goal, next action, blockers, and outstanding QA on a task card. Expand a sprint to see the tasks behind its progress.
+- **Reuse rules across worlds.** At the bottom of the sprint section, open **Rules** to copy or export plugin and world rules. Review them in the destination project before importing them.
+
+Your world starts in your local project. You can also pair it with an owner-private Site to view that project’s world and agents on the web. The [public ALife Worlds website](https://alifeworlds.com/) is open to everyone. Your private dashboard has its own address and access list.
+
+Created by **[Itzel Juarez](https://github.com/ItzelJuarez)**. Official plugin releases are published by **[ALife Worlds](https://github.com/ALifeWorlds)**.
 
 ## Download the release candidate
 
@@ -12,7 +21,7 @@ ALife Worlds is a Codex plugin that gives your agents a shared visual world. Eac
 
 The release tag is **v0.4.8-rc.1**. The plugin inside the ZIP reports **0.4.8**.
 
-This candidate clears an ant’s input-request indicator sooner after a recorded reply. Lists longer than five items scroll within the dashboard, so you can keep your place while agents report new work.
+The download above is the installable plugin ZIP. The [release guide](RELEASE.md) lists the changes in this candidate.
 
 ## Install in Codex on Windows
 
