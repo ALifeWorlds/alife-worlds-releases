@@ -1,4 +1,4 @@
-# ALife Worlds v0.4.16-rc.1
+# ALife Worlds v0.4.16-rc
 
 Plugin version: **0.4.16**. Created by **Itzel Juarez**; published by **ALife Worlds**.
 
