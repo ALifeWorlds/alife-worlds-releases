@@ -102,6 +102,8 @@ Wait for it to finish. If you use the desktop app, look for **ALife Worlds** und
 
 ## Create your private world
 
+For a world with only your Dot, read [the Dot-only request](#request-a-world-with-only-your-dot) before starting.
+
 First, choose a folder for your world.
 
 - **Start fresh.** Make an empty folder.
@@ -152,7 +154,7 @@ Have an exported ALife world? Paste its `/import` command in the project chat an
 
 ### Follow the setup
 
-ALife Worlds sets up three main chats, called **Director**, **Agent Support**, and **World Requests**.
+The standard team setup uses three main chats, called **Director**, **Agent Support**, and **World Requests**.
 
 If a chat shows **Needs approval**, open it and read the request. Click **Allow once** for a step you approve. One request may ask to save setup progress in `.alife-project-operations`, a folder next to your project.
 
@@ -161,6 +163,22 @@ When setup says it is ready, open your world and check that it shows your projec
 To come back later, ask in that project’s chat.
 
 > Open this project’s existing ALife World.
+
+## Request a world with only your Dot
+
+**Check this before starting.** The standard setup in v0.4.8-rc.1 creates three core chats. A working Dot-only setup and automatic avatar import have not been verified for this release.
+
+1. Open the conversation with your existing Dot.
+2. Attach the picture you want to use as your Dot’s avatar. You can also put it in your project folder, such as `references/dot-avatar.png`, and give the chat that path.
+3. Tell your Dot which project folder this world belongs to.
+4. If ALife Worlds is available in that chat, select it.
+5. Copy and send the request below before starting the standard setup.
+
+> I want a private ALife World with only my existing Dot and its avatar. Use the avatar image I supplied and keep my Dot’s name. Keep the working team limited to this Dot. Do not create Director, Agent Support, World Requests, or other agent chats. Check whether this version supports that setup first. If it needs more agents, stop and explain the limit.
+
+An avatar image supplies the character’s appearance. Ask the chat to confirm any live Dot connection before showing its activity.
+
+For help with Dot itself, see the [Dot guide](https://learn.chatgpt.com/docs/dots).
 
 ## Get a starting prompt from the website
 
