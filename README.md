@@ -19,7 +19,7 @@ ALife Worlds is a Codex plugin for making interactive worlds from pictures, your
 
 ## What you can do
 
-- **Make the world yours.** Describe a setting or supply reference artwork in Codex. Start with a scene you can explore, then ask for changes to its appearance and interactions.
+- **Make the world yours.** Start directly with your own world. Change its art, characters, layout, animation, sound and interactions; ant-world visuals are optional and remain available as a separate backup. Describe a setting or supply reference artwork in Codex. Start with a scene you can explore, then ask for changes to its appearance and interactions.
 - **See when your team needs you.** In the default world, each connected agent has a room. When an agent asks for input, its ant shows that state. Open the activity list to see the latest recorded work.
 - **Follow a sprint.** Check the goal, next action, blockers, and outstanding QA on a task card. Expand a sprint to see the tasks behind its progress.
 - **Reuse rules across worlds.** At the bottom of the sprint section, open **Rules** to copy or export plugin and world rules. Review them in the destination project before importing them.
@@ -30,9 +30,9 @@ Created by **[Itzel Juarez](https://github.com/ItzelJuarez)**. Official plugin r
 
 ## Download the release candidate
 
-**[Download ALife Worlds v0.4.14-rc.1 (.zip)](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.14-rc.1/alife-worlds-0.4.14.zip)** · [Release notes](https://github.com/ALifeWorlds/alife-worlds-releases/releases/tag/v0.4.14-rc.1) · [SHA-256 checksum](packages/SHA256SUMS)
+**[Download ALife Worlds v0.4.16-rc.1 (.zip)](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.16-rc.1/alife-worlds-0.4.16.zip)** · [Release notes](https://github.com/ALifeWorlds/alife-worlds-releases/releases/tag/v0.4.16-rc.1) · [SHA-256 checksum](packages/SHA256SUMS)
 
-The release tag is **v0.4.14-rc.1**. The plugin inside the ZIP reports **0.4.14**.
+The release tag is **v0.4.16-rc.1**. The plugin inside the ZIP reports **0.4.16**.
 
 The download above is the installable plugin ZIP. The [release guide](RELEASE.md) lists the changes in this candidate.
 
@@ -57,16 +57,16 @@ You need [Node.js 20 or newer](https://nodejs.org/en/download) and [Codex CLI](h
 
 ```powershell
 $ErrorActionPreference = 'Stop'
-$release = Join-Path $env:LOCALAPPDATA 'ALifeWorlds\releases\v0.4.14-rc.1'
+$release = Join-Path $env:LOCALAPPDATA 'ALifeWorlds\releases\v0.4.16-rc.1'
 $plugin = Join-Path $release 'plugins\alife-worlds'
 $catalog = Join-Path $release '.agents\plugins'
 if (Test-Path -LiteralPath $release) { throw "The release folder already exists: $release. Use a new empty folder or register the existing installation." }
 New-Item -ItemType Directory -Path $plugin, $catalog | Out-Null
 
-$zip = Join-Path $release 'alife-worlds-0.4.14.zip'
-$url = 'https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.14-rc.1/alife-worlds-0.4.14.zip'
+$zip = Join-Path $release 'alife-worlds-0.4.16.zip'
+$url = 'https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.16-rc.1/alife-worlds-0.4.16.zip'
 Invoke-WebRequest -UseBasicParsing -Uri $url -OutFile $zip
-$expected = '1eda676e57b4d8c973374a31bdbf543a84c7a56373bd77f60c3c8b108acb47b4'
+$expected = '5d922adfbfc8393e381c0e4c1406e5f17e3ce2e87f8593440c59a5d350d05ac5'
 if ((Get-FileHash -LiteralPath $zip -Algorithm SHA256).Hash -ne $expected) { throw 'Checksum mismatch. Stop here.' }
 Expand-Archive -LiteralPath $zip -DestinationPath $plugin
 
