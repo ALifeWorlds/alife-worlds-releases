@@ -29,3 +29,7 @@ The owner-Site template declares esbuild 0.28.2 as a development dependency. A d
 This inventory preserves recorded notices; it is not an exhaustive legal ownership opinion. Individual members behind the collective notice, assignments/employment rights, source-reference rights and any contributor agreements remain verification items. New or changed license/dependency records are surfaced by `npm run attribution:check` for human review.
 
 The project owner authorized public distribution of the supplied illustration and reference-derived woodland artwork in the 0.4.8 release candidate. Individual asset credits and their recorded terms accompany the packet.
+
+## Optional guide and Dot example font — 0.4.16
+
+Jersey 10: Copyright 2023 The Soft Type Project Authors. Preserve the complete [SIL Open Font License](LICENSES/Jersey10-OFL.txt), also included inside the plugin. Public creator-Dot example art is separate from any user’s private avatar or native identity; generation prompts accompany the assets.

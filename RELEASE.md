@@ -1,3 +1,28 @@
+# ALife Worlds v0.4.16-rc.1
+
+Plugin version: **0.4.16**. Created by **Itzel Juarez**; published by **ALife Worlds**.
+
+- Create and freely modify a custom world from an idea or references. Ant-specific presentation is optional; keep the default as a separate backup.
+- Preserve custom artwork and overrides during compatible updates. Privacy, real-agent settings, permissions, native capability and recovery safeguards remain.
+- Include latest pulled world UI and guarded recovery source from 0.4.15, with its original activation limits.
+- Restore cardboard paper, ink outlines and pixel headings on world creation and the step-by-step goal planner.
+- Include a playable creator-Dot example with movement, care controls and simulated mood/energy, separate from live agents; no network, persistence or AI calls.
+- Simplify commands into one readable scrollable list, retaining planned/alpha labels.
+
+Reusable guide, public example art, exact generation prompts and font license are inside the plugin. Each user supplies their own private pairing and Dot reference. No credentials or live runtime data are distributed.
+
+Source build, rule/attribution checks, packet fingerprint, committed-source byte identity and scoped UI observations completed. Further test suites were waived by the human. This RC is not full-suite, fresh-install or physical-FPS acceptance. Selected world artifacts and hosting versions remain separate.
+
+ZIP SHA256: 5d922adfbfc8393e381c0e4c1406e5f17e3ce2e87f8593440c59a5d350d05ac5
+
+Content fingerprint: 58774fd0553ff90a6e2f679805499bff78938fffe06211080c7967991ce7f634
+
+Source commit: f431f89.
+
+---
+
+## Previous release record
+
 # ALife Worlds 0.4.14 release candidate
 
 Created by **Itzel Juarez**. Published by **ALife Worlds**.
