@@ -1,3 +1,19 @@
+# ALife Worlds v0.4.17-rc
+
+Created by **Itzel Juarez**; published by **ALife Worlds**. Plugin version **0.4.17**.
+
+This packet includes current public website, support, privacy and terms links, PNG listing icons, clearer first-use prompts and the prepared submission metadata/review-case definitions. It preserves the runtime, artwork, skills, rules and custom-world protection from0.4.16. No pairing, organization ID, private Site data or credentials are included.
+
+This is the qualified distribution candidate. OpenAI identity verification, local-MCP eligibility, real reviewer case evidence/demo and directory submission/approval remain pending. Nothing in this release represents OpenAI endorsement or a completed directory review. Further general test suites remain waived; package/rules/attribution/syntax/build and exact unchanged-runtime checks passed.
+
+SHA256: 1d3619cd8d0e1e9ac2c2a19cef0c51a802c9ad110cf2bee2ff62ba1bf889eb59
+
+Content fingerprint: c427377db7d889153897898d9cad16b50247e141618deb347aaf0e2b3922f26a
+
+Source: 579b0898c3175f93f63f32cf3932658013916e73.
+
+---
+
 # ALife Worlds v0.4.16-rc
 
 Plugin version: **0.4.16**. Created by **Itzel Juarez**; published by **ALife Worlds**.
