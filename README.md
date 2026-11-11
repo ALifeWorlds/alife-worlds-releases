@@ -102,6 +102,10 @@ Wait for it to finish. If you use the desktop app, look for **ALife Worlds** und
 
 ## Create your private world
 
+Allow about **20–30 minutes** to generate a world, especially when it needs new artwork. Keep the chat open and check for setup approvals.
+
+You can ask for a custom world from the start. Describe the place you want or supply pictures. Ask Codex to make that custom world the one you open, with the default ant world kept as a backup.
+
 For a world with only your Dot, read [the Dot-only request](#request-a-world-with-only-your-dot) before starting.
 
 First, choose a folder for your world.
@@ -136,7 +140,7 @@ World setup needs Codex’s project and chat tools. If the CLI says those tools 
 
 **New world**
 
-> Create a private world for this project. Start with the default world. Use my approved agent settings at Standard speed. Open my world when it’s ready.
+> Create a private custom world for this project using my idea and references. Make the custom world the one that opens, and keep the default world as a backup. Use my approved agent settings at Standard speed. Open my world when it’s ready.
 
 **Existing project**
 
