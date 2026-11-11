@@ -2,7 +2,7 @@
 
 ALife Worlds is a Codex plugin for making interactive worlds from pictures, your own artwork, or a few words. Build a place for a story or a small game, or give the agents in your project a place to work. You can start with the default world, bring an existing project, or build a world with no agents at all.
 
-[Visit ALife Worlds](https://alifeworlds.com/) · [See the starting prompt](https://alifeworlds.com/worlds/#prompt-starter) · [Install in Codex](#install-in-codex-on-windows) · [Create your private world](#create-your-private-world) · [Download the release](#download-the-release-candidate) · [Report a bug or suggest an idea](https://github.com/ALifeWorlds/alife-worlds-releases/issues/new/choose)
+[Visit ALife Worlds](https://alifeworlds.com/) · [See the starting prompt](https://alifeworlds.com/how-it-works) · [Install in Codex](#install-in-codex-on-windows) · [Create your private world](#create-your-private-world) · [Download the release](#download-the-release-candidate) · [Report a bug or suggest an idea](https://github.com/ALifeWorlds/alife-worlds-releases/issues/new/choose)
 
 ## What you can do
 
@@ -188,7 +188,7 @@ For help with Dot itself, see the [Dot guide](https://learn.chatgpt.com/docs/dot
 
 A prompt is the message you send to Codex to describe what you want.
 
-1. Open the [ALife Worlds starting prompt](https://alifeworlds.com/worlds/#prompt-starter).
+1. Open the [ALife Worlds starting prompt](https://alifeworlds.com/how-it-works).
 2. Scroll to **What will your world be?**
 3. Click **Copy starting prompt**.
 4. Return to your project chat and select ALife Worlds using the app or CLI steps above.
