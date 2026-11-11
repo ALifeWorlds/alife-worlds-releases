@@ -132,7 +132,10 @@ The same world request is used in either place. Setup needs Codex’s project an
 2. Choose **New project** or **Existing project**.
 3. Choose **Default world**, **Describe a world**, or **Use my references**.
 4. Choose who appears on screen: **Dot + agents**, **Dot only**, or **Agents only**.
-5. Click **Copy world prompt**. Paste it into your Codex project chat and send it. The prompt already begins with **`/Alife worlds`**; there is no separate invocation step.
+5. In your Codex project chat, type **`/alife`** and select **ALife Worlds → create-world** (`$alife-worlds:create-world`).
+6. Click **Copy world prompt** on the website, paste your world request into that chat, and send it. For your first request, keep the selected create-world plugin attached. You do not need to type the website’s /Alife worlds starter line again.
+
+You can also start the same message directly with **`$alife-worlds:create-world`**, followed by your world request. The plugin file location on each computer may be different.
 
 For your own artwork, the prompt says to use the references you will upload. Add everything in one folder and give Codex its path, or attach files separately in the same chat. You do not need to make a document. Include your Dot’s avatar picture if Codex cannot access it.
 
@@ -141,7 +144,7 @@ The character options control who appears in the world. They do not remove exist
 <details>
 <summary>Prefer to write the request yourself?</summary>
 
-Begin with `/Alife worlds`, then describe the project, scene, references and characters you want. For example:
+Type `/alife` and select **ALife Worlds → create-world**, or begin directly with `$alife-worlds:create-world`. Then describe your project, scene, references and characters. For example:
 
 > /Alife worlds
 >
