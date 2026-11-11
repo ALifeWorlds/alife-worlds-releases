@@ -73,15 +73,13 @@ If PowerShell says the release folder already exists, check **Codex → Plugins*
 
 ### 2. Install ALife Worlds
 
-In the same PowerShell window, type `codex` and press Enter.
+Open Codex desktop. In the message box, type **`/Alife worlds`**. Include the slash at the start.
 
-Once Codex opens, type **`/plugins`** and press Enter. Include the slash at the start.
+Select **ALife Worlds** from the results. If Codex asks you to install it, choose **Install**.
 
-Choose **alife-worlds-releases**, select **ALife Worlds**, and choose **Install**.
+### 3. Look for the plugin
 
-### 3. Open Codex desktop
-
-Open the Codex desktop app. Click **Plugins** in the sidebar.
+Click **Plugins** in the Codex sidebar.
 
 Watch for **ALife Worlds** to appear. Make sure it is installed and turned on. If it hasn’t appeared yet, close and reopen the app using the same Codex profile.
 
@@ -101,7 +99,7 @@ Have an exported ALife world? Paste its `/import` command in this project’s ch
 
 ### 2. Ask ALife Worlds to create
 
-In your project chat, select **ALife Worlds → create-world**. Its full name is `alife-worlds:create-world`.
+In your project chat, type **`/Alife worlds`** and select **ALife Worlds** from the results.
 
 Tell it what you want to make. You can copy this example.
 
@@ -128,7 +126,7 @@ A prompt is the message you send to Codex to describe what you want.
 1. Open the [ALife Worlds starting prompt](https://alifeworlds.com/worlds/#prompt-starter).
 2. Scroll to **What will your world be?**
 3. Click **Copy starting prompt**.
-4. Return to your project chat in Codex and select **ALife Worlds → create-world**.
+4. Return to your project chat in Codex, type **`/Alife worlds`**, and select **ALife Worlds**.
 5. Paste the prompt. Add your own idea, pictures, or reference folder, then send it.
 
 You can read more examples for [using your artwork](https://alifeworlds.com/how-it-works/#your-art) or [connecting an existing team](https://alifeworlds.com/how-it-works/#existing-team).
