@@ -17,9 +17,9 @@ Created by **[Itzel Juarez](https://github.com/ItzelJuarez)**. Official plugin r
 
 ## Download the release candidate
 
-**[Download ALife Worlds v0.4.8-rc.1 (.zip)](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.8-rc.1/alife-worlds-0.4.8.zip)** · [Release notes](https://github.com/ALifeWorlds/alife-worlds-releases/releases/tag/v0.4.8-rc.1) · [SHA-256 checksum](packages/SHA256SUMS)
+**[Download ALife Worlds v0.4.11-rc.1 (.zip)](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.11-rc.1/alife-worlds-0.4.11.zip)** · [Release notes](https://github.com/ALifeWorlds/alife-worlds-releases/releases/tag/v0.4.11-rc.1) · [SHA-256 checksum](packages/SHA256SUMS)
 
-The release tag is **v0.4.8-rc.1**. The plugin inside the ZIP reports **0.4.8**.
+The release tag is **v0.4.11-rc.1**. The plugin inside the ZIP reports **0.4.11**.
 
 The download above is the installable plugin ZIP. The [release guide](RELEASE.md) lists the changes in this candidate.
 
@@ -44,16 +44,16 @@ You need [Node.js 20 or newer](https://nodejs.org/en/download) and [Codex CLI](h
 
 ```powershell
 $ErrorActionPreference = 'Stop'
-$release = Join-Path $env:LOCALAPPDATA 'ALifeWorlds\releases\v0.4.8-rc.1'
+$release = Join-Path $env:LOCALAPPDATA 'ALifeWorlds\releases\v0.4.11-rc.1'
 $plugin = Join-Path $release 'plugins\alife-worlds'
 $catalog = Join-Path $release '.agents\plugins'
 if (Test-Path -LiteralPath $release) { throw "The release folder already exists: $release. Use a new empty folder or register the existing installation." }
 New-Item -ItemType Directory -Path $plugin, $catalog | Out-Null
 
-$zip = Join-Path $release 'alife-worlds-0.4.8.zip'
-$url = 'https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.8-rc.1/alife-worlds-0.4.8.zip'
+$zip = Join-Path $release 'alife-worlds-0.4.11.zip'
+$url = 'https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.11-rc.1/alife-worlds-0.4.11.zip'
 Invoke-WebRequest -UseBasicParsing -Uri $url -OutFile $zip
-$expected = '72ec4e2f9b52023dbb167609f1ea4f16e8bb2293fd7366377f76f9e9fa5fe150'
+$expected = '2fea344a3acb773108890c5b1bc6be3b52d4416cea2f78d47780afdfd56c68ba'
 if ((Get-FileHash -LiteralPath $zip -Algorithm SHA256).Hash -ne $expected) { throw 'Checksum mismatch. Stop here.' }
 Expand-Archive -LiteralPath $zip -DestinationPath $plugin
 
@@ -170,7 +170,7 @@ To come back later, ask in that project’s chat.
 
 ## Request a world with only your Dot
 
-**Check this before starting.** The standard setup in v0.4.8-rc.1 creates three core chats. A working Dot-only setup and automatic avatar import have not been verified for this release.
+**Check this before starting.** The standard setup in v0.4.11-rc.1 creates three core chats. A working Dot-only setup and automatic avatar import have not been verified for this release.
 
 1. Open the conversation with your existing Dot.
 2. Attach the picture you want to use as your Dot’s avatar. You can also put it in your project folder, such as `references/dot-avatar.png`, and give the chat that path.

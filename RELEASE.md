@@ -1,11 +1,15 @@
-# ALife Worlds 0.4.8 release candidate
+# ALife Worlds 0.4.11 release candidate
 
-Created by **Itzel Juarez** and published by **ALife Worlds**. ALife Worlds gives a Codex project a visual world for its agents, assignments and recorded activity.
+Created by **Itzel Juarez**. Published by **ALife Worlds**.
 
-Download [the plugin ZIP](packages/alife-worlds-0.4.8.zip) and compare its SHA-256 digest with [SHA256SUMS](packages/SHA256SUMS). Follow the [Windows installation steps](README.md#install-in-codex-on-windows) and [private world setup](README.md#create-your-private-world). The ZIP also includes the source, tests, license and asset notices. Each project configures its own world and private Site pairing.
+[Download the plugin](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.11-rc.1/alife-worlds-0.4.11.zip) · [Install and create a private world](README.md#install-in-codex-on-windows) · [Checksums](packages/SHA256SUMS)
 
-This candidate includes the live QA list rule, scrollable dashboard lists, retained assignment panels, faster input-request clearance, passive below-room labels for the Site template, and improved ant emergence. Its qualified source passed 637 checks. One Windows symlink fixture was skipped.
+You can start directly with a custom world. The default ant world remains a separate backup. Updates preserve saved custom art and settings, and a new scene is prepared before it replaces the selected world.
 
-Use Issues to report bugs or suggest improvements. Include the plugin version, expected behavior, observed behavior and the smallest safe example. The maintainer controls published files and releases. For reporting a sensitive issue, see [SECURITY.md](SECURITY.md).
+This candidate also includes the blue-aura key (1.5× movement speed), thicker default clouds, the ALife World heading, existing role-specific room furnishings, and smaller hosted payloads that reuse identical artwork/audio. The setup guide now allows about **20–40 minutes** for world generation in Codex.
 
-The original MIT notice and third-party notices accompany the packet. Contributors retain applicable rights to their work. See [contributor recognition](CONTRIBUTORS.md), [contribution guidelines](CONTRIBUTING.md), [governance](GOVERNANCE.md) and [branding](BRANDING.md).
+The packet contains source, license and attribution notices, reusable rules and the world implementation. It contains no configured private Site, pairing credential, native agent identity or project history. Each installation uses its own project and pairing.
+
+The earlier implementation received 50 focused checks. The owner waived further test runs for this delivery. Package/version integrity, rules/attribution checks and the actual package build completed; full-suite and fresh-user acceptance are not claimed for this candidate.
+
+The prior v0.4.8-rc.1 release remains available. Use [Issues](https://github.com/ALifeWorlds/alife-worlds-releases/issues/new/choose) to report bugs or suggest changes. Repository access and official release authority remain with the owner. MIT and third-party notices remain in effect.
