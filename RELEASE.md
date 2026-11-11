@@ -1,60 +1,18 @@
-# ALife Worlds v0.4.17-rc
+# ALife Worlds v0.4.18-rc
 
-Created by **Itzel Juarez**; published by **ALife Worlds**. Plugin version **0.4.17**.
+Created by **Itzel Juarez**; published by **ALife Worlds**. Plugin version **0.4.18**.
 
-This packet includes current public website, support, privacy and terms links, PNG listing icons, clearer first-use prompts and the prepared submission metadata/review-case definitions. It preserves the runtime, artwork, skills, rules and custom-world protection from0.4.16. No pairing, organization ID, private Site data or credentials are included.
+- Clear local Codex setup and a guided, capability-dependent transfer from regular ChatGPT.
+- Read-only setup checks distinguish missing project access from a broken world.
+- Fresh world setup records stay inside the selected project folder.
+- Existing worlds, custom artwork, agents, settings, permissions and recovery are preserved.
 
-This is the qualified distribution candidate. OpenAI identity verification, local-MCP eligibility, real reviewer case evidence/demo and directory submission/approval remain pending. Nothing in this release represents OpenAI endorsement or a completed directory review. Further general test suites remain waived; package/rules/attribution/syntax/build and exact unchanged-runtime checks passed.
+All 49 affected bootstrap/storage/content checks passed, along with rules, attribution, syntax and sealed package builds. These use synthetic native bindings; a real ChatGPT transfer and formal directory review/demo remain pending. No credentials, organization ID or private world data are included. This is not OpenAI directory approval.
 
-SHA256: 1d3619cd8d0e1e9ac2c2a19cef0c51a802c9ad110cf2bee2ff62ba1bf889eb59
+SHA256: 4f78734348550b95d198b7baf490b9f1a160cd33617f530f611d52a58b7dc1ee
 
-Content fingerprint: c427377db7d889153897898d9cad16b50247e141618deb347aaf0e2b3922f26a
+Content fingerprint: cf11a4028e4f92342493eaad921cf2b8d0040cd3f30af10fc4eabd11ff196f02
 
-Source: 579b0898c3175f93f63f32cf3932658013916e73.
+Source: 221f369aaf2ecbeae8da1e79386c5d92b9a51d7d.
 
----
-
-# ALife Worlds v0.4.16-rc
-
-Plugin version: **0.4.16**. Created by **Itzel Juarez**; published by **ALife Worlds**.
-
-- Create and freely modify a custom world from an idea or references. Ant-specific presentation is optional; keep the default as a separate backup.
-- Preserve custom artwork and overrides during compatible updates. Privacy, real-agent settings, permissions, native capability and recovery safeguards remain.
-- Include latest pulled world UI and guarded recovery source from 0.4.15, with its original activation limits.
-- Restore cardboard paper, ink outlines and pixel headings on world creation and the step-by-step goal planner.
-- Include a playable creator-Dot example with movement, care controls and simulated mood/energy, separate from live agents; no network, persistence or AI calls.
-- Simplify commands into one readable scrollable list, retaining planned/alpha labels.
-
-Reusable guide, public example art, exact generation prompts and font license are inside the plugin. Each user supplies their own private pairing and Dot reference. No credentials or live runtime data are distributed.
-
-Source build, rule/attribution checks, packet fingerprint, committed-source byte identity and scoped UI observations completed. Further test suites were waived by the human. This RC is not full-suite, fresh-install or physical-FPS acceptance. Selected world artifacts and hosting versions remain separate.
-
-ZIP SHA256: 5d922adfbfc8393e381c0e4c1406e5f17e3ce2e87f8593440c59a5d350d05ac5
-
-Content fingerprint: 58774fd0553ff90a6e2f679805499bff78938fffe06211080c7967991ce7f634
-
-Source commit: f431f89.
-
----
-
-## Previous release record
-
-# ALife Worlds 0.4.14 release candidate
-
-Created by **Itzel Juarez**. Published by **ALife Worlds**.
-
-[Download the plugin](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.14-rc.1/alife-worlds-0.4.14.zip) · [Install and create a world](README.md#install-in-codex-on-windows) · [Checksums](packages/SHA256SUMS)
-
-This packet brings in the latest qualified plugin and world source at b0cbfc7d4ebd78dc9989c6b905a3194f69b1e11a. It preserves custom-world protection, the default-world backup, blue water, blue-aura speed key, thicker clouds, concise task cards, bounded activity, modular rules and creator/contributor notices.
-
-The latest source also contains an opt-in, owner-authenticated request backend addressed only to a verified Director. Installing it does not enable a sender, reconnect a foreign project, or send a native request. Each destination requires its own approved integration.
-
-The website guide now has one starting prompt with /Alife worlds included, artwork references supplied in Codex, three on-screen character choices, and a visual goal → sprints → tasks example. World artwork can take about **20–40 minutes** to generate. [Use the guide](https://alifeworlds.com/how-it-works).
-
-The sealed packet contains no configured private Site, pairing credential, native agent identity or project history. Each installation uses its own project and pairing. Plugin source version 0.4.14 is separate from actual selected world, renderer and website versions.
-
-Package construction completed with the required version, rule, attribution and private-file guards. The owner waived further test runs; no new full-suite, fresh-user or physical frame-rate acceptance is claimed. Existing worlds are not redeployed by this download.
-
-Earlier candidates remain available. Use [Issues](https://github.com/ALifeWorlds/alife-worlds-releases/issues/new/choose) for bugs and suggestions. Official repository updates remain owner controlled; MIT and third-party notices stay in effect.
-
-The reusable guide now ships in world/public-site-guide, including its prompt builder, fictional sprint planner and proportion-preserving paper treatment. The live marketing Site also retains the incoming portrait, Dot-example, contrast, scrolling and control repairs. These presentation updates do not replace a saved custom world, import private Site state or enable native sending.
+Only the current packet is kept on main. Prior published releases and Git history remain available for recovery.

@@ -30,11 +30,17 @@ Created by **[Itzel Juarez](https://github.com/ItzelJuarez)**. Official plugin r
 
 ## Download the release candidate
 
-**[Download ALife Worlds v0.4.17-rc (.zip)](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.17-rc/alife-worlds-0.4.17.zip)** · [Release notes](https://github.com/ALifeWorlds/alife-worlds-releases/releases/tag/v0.4.17-rc) · [SHA-256 checksum](packages/SHA256SUMS)
+**[Download ALife Worlds v0.4.18-rc (.zip)](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.18-rc/alife-worlds-0.4.18.zip)** · [Release notes](https://github.com/ALifeWorlds/alife-worlds-releases/releases/tag/v0.4.18-rc) · [SHA-256 checksum](packages/SHA256SUMS)
 
-The release tag is **v0.4.17-rc**. The plugin inside the ZIP reports **0.4.17**.
+The release tag is **v0.4.18-rc**. The plugin inside the ZIP reports **0.4.18**.
 
 The download above is the installable plugin ZIP. The [release guide](RELEASE.md) lists the changes in this candidate.
+
+## Start in Codex, not regular ChatGPT
+
+Create the world in a **local Codex project chat**. In the desktop app, switch to **Codex**, choose **Local / This computer**, and open the folder for your world. Regular ChatGPT can help plan your world and prepare the request. If it offers a supported transfer, ask it to create a Codex chat in your chosen saved project. If it cannot transfer, copy the request into Codex. Seeing no local project in regular ChatGPT does not mean your world is broken.
+
+In that Codex project chat, type **/alife** and select **ALife Worlds → create-world**, or attach **$alife-worlds:create-world**. Fresh world files and setup records stay inside that project’s ignored **.alife-worlds** folder. Codex keeps its own app/session records separately. Existing worlds, agents, art and settings are preserved.
 
 ## Install in Codex on Windows
 
@@ -57,16 +63,16 @@ You need [Node.js 20 or newer](https://nodejs.org/en/download) and [Codex CLI](h
 
 ```powershell
 $ErrorActionPreference = 'Stop'
-$release = Join-Path $env:LOCALAPPDATA 'ALifeWorlds\releases\v0.4.17-rc'
+$release = Join-Path $env:LOCALAPPDATA 'ALifeWorlds\releases\v0.4.18-rc'
 $plugin = Join-Path $release 'plugins\alife-worlds'
 $catalog = Join-Path $release '.agents\plugins'
 if (Test-Path -LiteralPath $release) { throw "The release folder already exists: $release. Use a new empty folder or register the existing installation." }
 New-Item -ItemType Directory -Path $plugin, $catalog | Out-Null
 
-$zip = Join-Path $release 'alife-worlds-0.4.17.zip'
-$url = 'https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.17-rc/alife-worlds-0.4.17.zip'
+$zip = Join-Path $release 'alife-worlds-0.4.18.zip'
+$url = 'https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.18-rc/alife-worlds-0.4.18.zip'
 Invoke-WebRequest -UseBasicParsing -Uri $url -OutFile $zip
-$expected = '1d3619cd8d0e1e9ac2c2a19cef0c51a802c9ad110cf2bee2ff62ba1bf889eb59'
+$expected = '4f78734348550b95d198b7baf490b9f1a160cd33617f530f611d52a58b7dc1ee'
 if ((Get-FileHash -LiteralPath $zip -Algorithm SHA256).Hash -ne $expected) { throw 'Checksum mismatch. Stop here.' }
 Expand-Archive -LiteralPath $zip -DestinationPath $plugin
 
