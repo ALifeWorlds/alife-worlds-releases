@@ -102,7 +102,7 @@ Wait for it to finish. If you use the desktop app, look for **ALife Worlds** und
 
 ## Create your private world
 
-Allow about **20–30 minutes** to generate a world, especially when it needs new artwork. Keep the chat open and check for setup approvals.
+Allow about **20–40 minutes** to generate a world, especially when it needs new artwork. Keep the chat open and check for setup approvals.
 
 You can ask for a custom world from the start. Describe the place you want or supply pictures. Ask Codex to make that custom world the one you open, with the default ant world kept as a backup.
 
