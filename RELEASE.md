@@ -1,15 +1,17 @@
-# ALife Worlds 0.4.11 release candidate
+# ALife Worlds 0.4.13 release candidate
 
 Created by **Itzel Juarez**. Published by **ALife Worlds**.
 
-[Download the plugin](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.11-rc.1/alife-worlds-0.4.11.zip) · [Install and create a private world](README.md#install-in-codex-on-windows) · [Checksums](packages/SHA256SUMS)
+[Download the plugin](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.13-rc.1/alife-worlds-0.4.13.zip) · [Install and create a world](README.md#install-in-codex-on-windows) · [Checksums](packages/SHA256SUMS)
 
-You can start directly with a custom world. The default ant world remains a separate backup. Updates preserve saved custom art and settings, and a new scene is prepared before it replaces the selected world.
+This packet brings in the latest qualified plugin and world source at 14c93919e7024885e32ef79c9d22bc058fdf9859. It preserves custom-world protection, the default-world backup, blue water, blue-aura speed key, thicker clouds, concise task cards, bounded activity, modular rules and creator/contributor notices.
 
-This candidate also includes the blue-aura key (1.5× movement speed), thicker default clouds, the ALife World heading, existing role-specific room furnishings, and smaller hosted payloads that reuse identical artwork/audio. The setup guide now allows about **20–40 minutes** for world generation in Codex.
+The latest source also contains an opt-in, owner-authenticated request backend addressed only to a verified Director. Installing it does not enable a sender, reconnect a foreign project, or send a native request. Each destination requires its own approved integration.
 
-The packet contains source, license and attribution notices, reusable rules and the world implementation. It contains no configured private Site, pairing credential, native agent identity or project history. Each installation uses its own project and pairing.
+The website guide now has one starting prompt with /Alife worlds included, artwork references supplied in Codex, three on-screen character choices, and a visual goal → sprints → tasks example. World artwork can take about **20–40 minutes** to generate. [Use the guide](https://alifeworlds.com/how-it-works).
 
-The earlier implementation received 50 focused checks. The owner waived further test runs for this delivery. Package/version integrity, rules/attribution checks and the actual package build completed; full-suite and fresh-user acceptance are not claimed for this candidate.
+The sealed packet contains no configured private Site, pairing credential, native agent identity or project history. Each installation uses its own project and pairing. Plugin source version 0.4.13 is separate from actual selected world, renderer and website versions.
 
-The prior v0.4.8-rc.1 release remains available. Use [Issues](https://github.com/ALifeWorlds/alife-worlds-releases/issues/new/choose) to report bugs or suggest changes. Repository access and official release authority remain with the owner. MIT and third-party notices remain in effect.
+Package construction completed with the required version, rule, attribution and private-file guards. The owner waived further test runs; no new full-suite, fresh-user or physical frame-rate acceptance is claimed. Existing worlds are not redeployed by this download.
+
+Earlier candidates remain available. Use [Issues](https://github.com/ALifeWorlds/alife-worlds-releases/issues/new/choose) for bugs and suggestions. Official repository updates remain owner controlled; MIT and third-party notices stay in effect.
