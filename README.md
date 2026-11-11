@@ -184,6 +184,8 @@ Before using the plugin on important work or approving a cleanup or deletion, sa
 
 ALife Worlds is provided as is, without warranty. To the extent permitted by applicable law, the MIT License limits the liability of its authors and copyright holders, including original creator Itzel Juarez, for claims arising from use of the software. Examples include lost work, accidentally deleted projects, overwritten or corrupted files, and recovery costs. [License and explanatory note](LICENSE)
 
+Read our [help and support page](https://alifeworlds.com/support/), [privacy policy](https://alifeworlds.com/privacy/) and [software terms](https://alifeworlds.com/terms/).
+
 ## Help improve the plugin
 
 [Report a bug or suggest a change](https://github.com/ALifeWorlds/alife-worlds-releases/issues/new/choose). For a bug, include the release version, what you expected, what happened, and steps we can try in a sample world. For an idea, describe the change and who it would help. Please keep private Site links, pairing credentials, and chat logs out of public reports.
