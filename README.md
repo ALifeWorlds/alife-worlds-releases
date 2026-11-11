@@ -4,6 +4,19 @@ ALife Worlds is a Codex plugin for making interactive worlds from pictures, your
 
 [Visit ALife Worlds](https://alifeworlds.com/) · [See the starting prompt](https://alifeworlds.com/how-it-works) · [Install in Codex](#install-in-codex-on-windows) · [Create your private world](#create-your-private-world) · [Download the release](#download-the-release-candidate) · [Report a bug or suggest an idea](https://github.com/ALifeWorlds/alife-worlds-releases/issues/new/choose)
 
+
+## A world you can see
+
+[![The default ALife World: woodland scenery, agent rooms and world controls](media/alife-world-preview.png)](https://alifeworlds.com/world/view)
+
+*The default world gives your team a place to work. [Explore the public demo](https://alifeworlds.com/world/view), or start with your own setting.*
+
+<table>
+<tr><td align="center" width="50%"><img src="media/cozy-home-concept.png" alt="A handmade home with companion characters" width="360"><br><strong>A cozy home for your characters</strong></td><td align="center" width="50%"><img src="media/storybook-concept.png" alt="A storybook opening into a miniature world" width="360"><br><strong>A story, a scene, or a world of your own</strong></td></tr>
+</table>
+
+*Art concepts from the ALife Worlds website. Bring references or describe the world you want; the ant world is one starting point.*
+
 ## What you can do
 
 - **Make the world yours.** Describe a setting or supply reference artwork in Codex. Start with a scene you can explore, then ask for changes to its appearance and interactions.
