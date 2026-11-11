@@ -1,0 +1,1 @@
+Public ALife Worlds showcase images. The woodland image is a capture of the public world viewer. The home and storybook images are art concepts from the public ALife Worlds website, included with the owner's public-artwork authorization. Creator and contributor recognition remains governed by the repository notices.
