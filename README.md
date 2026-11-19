@@ -1,41 +1,98 @@
 # ALife Worlds
 
-A local Codex plugin that gives your project’s agents a visual home. Create worlds, games, interactive experiences and stories from your ideas or your own licensed references. Created by **Itzel Juarez**.
+**Give your Codex agents a world you can see.** Turn your ideas or artwork into a home for your team, a game, an interactive experience or a story. Your ideas set the boundaries.
 
-[Website](https://alifeworlds.com/) · [Setup guide](https://alifeworlds.com/how-it-works) · [Support](https://alifeworlds.com/support/) · [Report an issue](https://github.com/ALifeWorlds/alife-worlds-releases/issues/new/choose)
+Created by **Itzel Juarez**. [Explore the website](https://alifeworlds.com/) · [See how it works](https://alifeworlds.com/how-it-works) · [Get help](https://alifeworlds.com/support/)
 
-## Downloads
+## Start here — no PowerShell experience needed
 
-**[Download ALife Worlds 0.4.23](packages/alife-worlds-0.4.23.zip)** · [SHA-256 checksum](packages/SHA256SUMS)
+You do not need to understand GitHub, clone this repository or type terminal commands yourself. The easiest route is to let Codex handle the installation while you describe what you want.
 
-This qualified packet excludes website source/artwork, Dot assets and artwork with unverified redistribution rights. It restores the original creator-confirmed planet icon and includes an exact media/license inventory. Seven earlier binary downloads have been withdrawn; their plain version tags retain sanitized documentation history only. Do not install an older cached package.
+### 1. Get Codex ready
 
-## Use your project folder
+1. **Install the desktop app** using [OpenAI's official download and setup guide](https://learn.chatgpt.com/docs/app), then sign in with your ChatGPT account.
+2. **Choose Codex** in the app. Select **Local / This computer**, rather than Cloud, and open the folder where you want your world to live. A project is simply that folder and its chats. See [OpenAI's quickstart](https://learn.chatgpt.com/docs/quickstart) if this is your first time.
+3. **Start a chat in that project** and paste the installation prompt below.
 
-Create worlds in a local **Codex project chat** using ALife Worlds → create-world. Keep each project’s files, imported roles, artwork and ordinary records in that project’s verified folder. Run /import from the destination project’s own chat. Regular ChatGPT can help prepare your prompt; local project creation takes place in Codex.
+Already using Codex? Open your local project chat and go straight to the prompt.
 
-## Share your work
+### 2. Option 1: ask ChatGPT or Codex to help you install
 
-You can submit agent definitions and world designs through the Share a world or agent issue template. Share only material you have permission to redistribute, include its license and import instructions, and exclude private chats, identities, project data and credentials. Submissions need review before they are described as official or compatible.
+Copy this whole message, including the GitHub link:
 
-## License
+```text
+Help me install ALife Worlds from this official release repository:
+https://github.com/ALifeWorlds/alife-worlds-releases
 
-Retained project documentation and software notices use the existing [MIT license](LICENSE). The website and its images are a separate distribution. No website asset license is granted by this repository. See [Third-party notices](THIRD_PARTY_NOTICES.md), [Contributing](CONTRIBUTING.md) and [Security](SECURITY.md).
+I am new to Codex and do not want to type PowerShell commands myself.
+First check whether this chat can work with files on my computer. If it
+cannot, walk me through OpenAI's official desktop setup and give me this
+prompt to continue in a local Codex project chat.
 
-## Versioned agent imports
+In local Codex, read the repository's README.md and INSTALL.md. Check for
+an existing ALife Worlds installation before making changes. Install the
+latest stable release using its named plugin ZIP and SHA256SUMS, verify
+the checksum, and follow the documented Codex marketplace installation.
+Check the Node.js and Codex requirements and help install missing tools
+from their official sources if needed.
 
-Imported agents keep their explicitly supplied version in creation names and saved definitions. Combining a local definition with an incoming update preserves both sources, resolves conflicting edits and prepares a version newer than both. Export includes the full combined definition and exact baseline versions. Same-identity adoption into a running agent still needs an actual supported writer and saved/native readback; the merge helper does not create or replace agents.
+Keep the downloaded setup files inside this project's folder. Preserve
+existing worlds, agents, settings and other plugins. Verify the installed
+version and available ALife Worlds commands, then tell me how to open it.
+Do not create a world or new agent chats until I ask.
+```
 
-The 0.4.23 package passes 97 focused source checks and generated-rule/media gates. The release ZIP preserves every qualified packet byte. Codex installation, loaded-host visual acceptance and private-world activation are separate; this delivery leaves the existing Codex plugin and local runtime on 0.4.22. This is not OpenAI directory approval.
+**Starting in regular ChatGPT is fine for guidance.** A web chat without access to your computer cannot install this local plugin for you; continue in a local Codex chat for the installation. Giving ChatGPT the link alone does not install anything.
 
-## Command menu
+### 3. Create your first world
 
-Every command has its own Codex skill entry and a short action description. Type / and search import, for example, then choose ALife Worlds → import. You can also attach $alife-worlds:import directly. See [all commands and their actions](COMMANDS.md).
+After Codex confirms the plugin is installed, send this in the project where you want the world:
 
-## Plugin version and update status
+```text
+Use $alife-worlds:create-world to create an ALife World in this project.
+Help me choose a world for my agents, or a game, interactive experience
+or story. Start with my idea and explain the choices in plain language.
+```
 
-The ALife Worlds view in 0.4.23 shows its actual plugin version above the world canvas and provides Check for updates. A verified newer stable public release shows Update available linking to its official release page. It never installs automatically. Offline checks remain unavailable.
+To use your own art, attach it in that same Codex chat or give Codex its folder path. Your project's artwork, world files, agent homes and ordinary working records stay with that project.
 
-Director can answer version questions using /plugin version. New projects retain the creation plugin version; verified runtime updates append project-local history in .alife-worlds/plugin-version.json. World-only changes do not change the plugin version.
+## Option 2: install with PowerShell
 
-The notice is new in 0.4.23, so 0.4.22 cannot display it before its first supported manual update. Git publication does not install a local plugin or guarantee a native Codex marketplace badge.
+Comfortable with Codex and a terminal? Follow the [Windows PowerShell installation steps](INSTALL.md#windows-powershell-fresh-install). They cover downloading the release, checking its checksum, registering a local marketplace and verifying the installed plugin.
+
+You need Node.js 20 or newer and the Codex command available. This route uses a verified release ZIP; you do not need to build the plugin or clone the source repository. Existing installations should use the [update guidance](INSTALL.md#already-installed) instead of creating a second copy.
+
+## Downloads and commands
+
+**[Latest release](https://github.com/ALifeWorlds/alife-worlds-releases/releases/latest)** · [Plugin ZIP 0.4.23](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.23/alife-worlds-0.4.23.zip) · [Checksum](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.23/SHA256SUMS)
+
+On the release page, choose **alife-worlds-0.4.23.zip** under Assets. GitHub's **Source code** downloads contain this distribution repository, not the installable plugin packet.
+
+Type `/` in the Codex composer and search for an ALife Worlds command, or attach its full name such as `$alife-worlds:import`. [See all nine commands and what they do.](COMMANDS.md)
+
+## Know which version you are using
+
+From version 0.4.23, the **ALife Worlds** view shows its plugin version above the world canvas. **Check for updates** looks for a newer stable public release. **Update available** opens that release's page; it does not install it automatically.
+
+Ask Director which plugin version your project uses, or use `/plugin version`. Project metadata keeps the original creation version and later verified runtime updates separately from world changes. An older 0.4.22 installation needs its first manual update before it can display the new notice. A GitHub push alone does not update Codex or guarantee a native marketplace badge.
+
+## Share a world or agent
+
+Want others to import something you made? [Prepare a community submission](https://github.com/ALifeWorlds/alife-worlds-releases/issues/new/choose) with your agent definition or world design, its license and import instructions. Keep private chats, credentials and project data out of submissions. Community submissions are reviewed before being described as official or compatible.
+
+Imported agents retain their explicit versions. Preparing an update preserves local changes and incoming improvements, with a choice for conflicts. Updating a running agent's instructions requires its separate supported adoption/readback workflow; preparing a definition does not complete that update.
+
+## Help and license
+
+[Website support](https://alifeworlds.com/support/) · [Report an issue](https://github.com/ALifeWorlds/alife-worlds-releases/issues/new/choose) · [MIT license](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md)
+
+The plugin ZIP excludes website/Dot assets and artwork with unverified redistribution rights. The website is a separate distribution.
+
+<details>
+<summary>Release verification and older downloads</summary>
+
+The 0.4.23 packet passed 97 focused source checks and generated-rule/media gates. All 395 ZIP entries match the sealed packet, and the published ZIP/checksum were verified anonymously. Installation, visible host behavior and world activation have separate verification; this is not OpenAI directory approval.
+
+Earlier unqualified binary downloads were withdrawn. Historical plain-version tags retain sanitized documentation; use the current qualified release instead of an older cached packet.
+
+</details>
