@@ -6,7 +6,7 @@ A local Codex plugin that gives your project’s agents a visual home. Create wo
 
 ## Downloads
 
-Earlier downloads are withdrawn while the distribution is updated. This repository does not distribute website source, website artwork, Dot assets or artwork with unverified redistribution rights. Do not install an older cached package. A future qualified plugin download will have its own version, checksum and media inventory.
+Earlier packages are under review and should not be installed. This repository does not distribute website source, website artwork, Dot assets or artwork with unverified redistribution rights. Do not install an older cached package. A future qualified plugin download will have its own version, checksum and media inventory.
 
 ## Use your project folder
 
