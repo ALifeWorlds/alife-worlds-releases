@@ -1,13 +1,12 @@
-# ALife Worlds 0.4.21
+# ALife Worlds 0.4.23
 
-- Preserve explicit imported agent versions in creation titles and portable definitions.
-- Prepare non-lossy three-way updates with full source baselines, conflict choices and a version newer than both local and incoming definitions.
-- Keep imports and project-owned files in the invoking project. Agent-only imports report unrelated historical publishing uncertainty separately.
-- Restore the original creator-confirmed planet icon family. Ship four fresh no-reference woodland atlases with exact media/license hashes and retained CC0 audio/font notices.
-- Exclude website source/artwork, Dot assets, uncertain reference-derived art and project-private/runtime data from the plugin ZIP.
+- Show the actual plugin version and bounded public-release update status in the ALife Worlds view.
+- Save original creation and verified runtime-update versions in each project, independently of world changes.
+- Let Director report the plugin and project runtime versions through /plugin version.
+- Rename the Codex view to ALife Worlds. Preserve existing worlds, agents, settings and private publisher recovery.
 
-SHA-256: 702f68040666fffb0be04a7ba6fbc30874ebc16c1329d0e9e5c2d42b59cb639d
+97 focused checks passed. Generated rules and media/license gates passed. The 395-file ZIP matches the qualified released packet. Codex and this project's current runtime remain on 0.4.22 at the human's request; the new status UI requires the first supported manual update before it can appear. Update available opens the official release page; it is not an automatic installer or a promise of a native Codex marketplace badge.
 
-Sealed content fingerprint: afe12652f283353519ae79d5ebe41a8ad80f64d5d06ed4d64aafb465f13b18ef
+SHA-256: 22925efbe0f10ed13cfe60b3581988ca0d856c532d89242f3f34b6c2112cb5b0
 
-Older binary downloads have been withdrawn. Previous plain-version tags retain sanitized documentation history only; no old packet was silently rebuilt under the same version. Current source qualification does not establish actual native same-identity update acceptance or OpenAI directory approval.
+Sealed content fingerprint: 5e1c179b61ecb5f12548cd0fa060ef57b1483c5fa3aca4199cbd89f48464a38e
