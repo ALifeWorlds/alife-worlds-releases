@@ -6,7 +6,9 @@ A local Codex plugin that gives your project’s agents a visual home. Create wo
 
 ## Downloads
 
-Earlier packages are under review and should not be installed. This repository does not distribute website source, website artwork, Dot assets or artwork with unverified redistribution rights. Do not install an older cached package. A future qualified plugin download will have its own version, checksum and media inventory.
+**[Download ALife Worlds 0.4.21](packages/alife-worlds-0.4.21.zip)** · [SHA-256 checksum](packages/SHA256SUMS)
+
+This qualified packet excludes website source/artwork, Dot assets and artwork with unverified redistribution rights. It restores the original creator-confirmed planet icon and includes an exact media/license inventory. Seven earlier binary downloads have been withdrawn; their plain version tags retain sanitized documentation history only. Do not install an older cached package.
 
 ## Use your project folder
 
@@ -19,3 +21,9 @@ You can submit agent definitions and world designs through the Share a world or 
 ## License
 
 Retained project documentation and software notices use the existing [MIT license](LICENSE). The website and its images are a separate distribution. No website asset license is granted by this repository. See [Third-party notices](THIRD_PARTY_NOTICES.md), [Contributing](CONTRIBUTING.md) and [Security](SECURITY.md).
+
+## Versioned agent imports
+
+Imported agents keep their explicitly supplied version in creation names and saved definitions. Combining a local definition with an incoming update preserves both sources, resolves conflicting edits and prepares a version newer than both. Export includes the full combined definition and exact baseline versions. Same-identity adoption into a running agent still needs an actual supported writer and saved/native readback; the merge helper does not create or replace agents.
+
+Package construction, 39 focused source cases, rules/media checks and installed-byte comparison passed. This is not OpenAI directory approval or a claim of completed clean-desktop/native review.
