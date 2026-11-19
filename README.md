@@ -6,7 +6,7 @@ A local Codex plugin that gives your project’s agents a visual home. Create wo
 
 ## Downloads
 
-**[Download ALife Worlds 0.4.21](packages/alife-worlds-0.4.21.zip)** · [SHA-256 checksum](packages/SHA256SUMS)
+**[Download ALife Worlds 0.4.22](packages/alife-worlds-0.4.22.zip)** · [SHA-256 checksum](packages/SHA256SUMS)
 
 This qualified packet excludes website source/artwork, Dot assets and artwork with unverified redistribution rights. It restores the original creator-confirmed planet icon and includes an exact media/license inventory. Seven earlier binary downloads have been withdrawn; their plain version tags retain sanitized documentation history only. Do not install an older cached package.
 
@@ -26,4 +26,8 @@ Retained project documentation and software notices use the existing [MIT licens
 
 Imported agents keep their explicitly supplied version in creation names and saved definitions. Combining a local definition with an incoming update preserves both sources, resolves conflicting edits and prepares a version newer than both. Export includes the full combined definition and exact baseline versions. Same-identity adoption into a running agent still needs an actual supported writer and saved/native readback; the merge helper does not create or replace agents.
 
-Package construction, 39 focused source cases, rules/media checks and installed-byte comparison passed. This is not OpenAI directory approval or a claim of completed clean-desktop/native review.
+The 0.4.22 package passes five focused package checks, generated-rule/media gates and a 390-file installed-byte comparison. Codex's read-only skill loader discovers all nine entries with their action descriptions. This is not OpenAI directory approval or a claim of completed clean-desktop/native visual review.
+
+## Command menu
+
+Every command has its own Codex skill entry and a short action description. Type / and search import, for example, then choose ALife Worlds → import. You can also attach $alife-worlds:import directly. See [all commands and their actions](COMMANDS.md).
