@@ -6,13 +6,11 @@ Created by **Itzel Juarez**. [Explore ALife Worlds](https://alifeworlds.com/) ·
 
 ## Install ALife Worlds
 
-Choose the app you use. Opening one guide closes the other.
+[🟦 **Codex**](#user-content-choose-codex) · [🟧 **Claude Code**](#user-content-choose-claude)
 
-<table>
-<tr>
-<td width="50%" valign="top">
 <details name="alife-install-platform" open>
-<summary><strong>🟦 Codex</strong></summary>
+<summary><strong>Install with Codex</strong></summary>
+<a id="choose-codex"></a>
 
 [Set up](#set-up-codex) · [Install](#install-the-codex-plugin) · [Create a world](#create-a-world-in-codex)
 
@@ -49,11 +47,10 @@ To use your own artwork, attach it in the project chat or share the path to your
 [Windows PowerShell guide](INSTALL.md#windows-powershell-fresh-install) · [Codex plugin 0.4.32](https://github.com/ALifeWorlds/alife-worlds-releases/releases/tag/v0.4.32) · [Codex commands](COMMANDS.md)
 
 </details>
-</td>
-<td width="50%" valign="top">
 
 <details name="alife-install-platform">
-<summary><strong>🟧 Claude Code</strong></summary>
+<summary><strong>Install with Claude Code</strong></summary>
+<a id="choose-claude"></a>
 
 [Set up](#set-up-claude-code) · [Install](#install-the-claude-code-plugin) · [Create a world](#create-a-world-in-claude-code)
 
@@ -112,9 +109,6 @@ To start with your artwork, tell Claude which files or folder to use.
 [Claude plugin checksum](packages/claude/SHA256SUMS) · [Claude Desktop plugin help](https://claude.com/docs/plugins/overview)
 
 </details>
-</td>
-</tr>
-</table>
 
 ## Check your version
 
