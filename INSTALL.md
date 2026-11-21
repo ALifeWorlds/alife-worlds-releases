@@ -103,7 +103,7 @@ The plugin list should show `alife-worlds@alife-worlds-release`, version `0.4.32
 
 ### 4. Open it and make a world
 
-Start a new Codex chat in your chosen local project so it loads the installed plugin's skills. If the app still shows the previous plugin list, reopen the desktop app after saving your work. Search the composer for ALife Worlds → **create-world**, or send:
+Start a new Codex chat in your chosen local project. Type `@create-world`, select the ALife Worlds skill, and describe your world. If the picker is unavailable, send this prompt.
 
 ```text
 Use $alife-worlds:create-world to create an ALife World in this project.

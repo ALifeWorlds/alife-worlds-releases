@@ -42,6 +42,8 @@ Wait for me to ask before creating a world or any agents.
 
 #### Create a world in Codex
 
+Type `@create-world` in your local Codex chat and select the ALife Worlds skill. Describe what you want to make. You can also send this prompt.
+
 ```text
 Use $alife-worlds:create-world to make a moonlit pine village in this project.
 ```
