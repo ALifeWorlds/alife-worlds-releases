@@ -1,0 +1,19 @@
+{
+  "name": "alife-worlds",
+  "description": "The ALife Worlds plugin for Claude Code.",
+  "owner": {
+    "name": "Itzel Juarez"
+  },
+  "plugins": [
+    {
+      "name": "alife-worlds",
+      "description": "Give your Claude Code agents a shared visual world with a local Sprints dashboard.",
+      "version": "0.1.2",
+      "source": {
+        "source": "archive",
+        "url": "https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.2.zip",
+        "sha256": "315c31585f35dcf45fcf448ce814e28f8870f2a1cd5a7bec72e9ce4fe295eee4"
+      }
+    }
+  ]
+}

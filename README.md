@@ -1,10 +1,15 @@
 # ALife Worlds
 
-**Give your Codex agents a world you can see.** Turn your ideas or artwork into a home for your team, a game, an interactive experience or a story. Your ideas set the boundaries.
+**Give your agents a world you can see.** Turn your ideas or artwork into a home for your team, a game, an interactive experience or a story. Your ideas set the boundaries.
 
 Created by **Itzel Juarez**. [Explore the website](https://alifeworlds.com/) · [See how it works](https://alifeworlds.com/how-it-works) · [Get help](https://alifeworlds.com/support/)
 
-## Start here — no PowerShell experience needed
+## Install ALife Worlds
+
+| **Codex · Primary** | [**Claude Code**](INSTALL-CLAUDE.md) |
+| --- | --- |
+
+### Start here without a terminal
 
 You do not need to understand GitHub, clone this repository or type terminal commands yourself. The easiest route is to let Codex handle the installation while you describe what you want.
 
@@ -16,7 +21,7 @@ You do not need to understand GitHub, clone this repository or type terminal com
 
 Already using Codex? Open your local project chat and go straight to the prompt.
 
-### 2. Option 1: ask ChatGPT or Codex to help you install
+### 2. Ask ChatGPT or Codex to help you install
 
 Copy this whole message, including the GitHub link:
 
@@ -31,7 +36,7 @@ prompt to continue in a local Codex project chat.
 
 In local Codex, read the repository's README.md and INSTALL.md. Check for
 an existing ALife Worlds installation before making changes. Install the
-latest stable release using its named plugin ZIP and SHA256SUMS, verify
+latest stable Codex release using its named plugin ZIP and SHA256SUMS, verify
 the checksum, and follow the documented Codex marketplace installation.
 Check the Node.js and Codex requirements and help install missing tools
 from their official sources if needed.
@@ -64,7 +69,7 @@ You need Node.js 20 or newer and the Codex command available. This route uses a 
 
 ## Downloads and commands
 
-**[Latest release](https://github.com/ALifeWorlds/alife-worlds-releases/releases/latest)** · [Plugin ZIP 0.4.23](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.23/alife-worlds-0.4.23.zip) · [Checksum](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.23/SHA256SUMS)
+**[Latest Codex release](https://github.com/ALifeWorlds/alife-worlds-releases/releases/latest)** · [Codex plugin ZIP 0.4.23](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.23/alife-worlds-0.4.23.zip) · [Checksum](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.23/SHA256SUMS)
 
 On the release page, choose **alife-worlds-0.4.23.zip** under Assets. GitHub's **Source code** downloads contain this distribution repository, not the installable plugin packet.
 
