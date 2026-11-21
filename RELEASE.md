@@ -1,9 +1,7 @@
-# ALife Worlds 0.4.31
+# ALife Worlds 0.4.32
 
-- New Codex worlds with no supplied goal give Director the goal “Create and connect this project's ALife World” and record it on the project planning board.
-- Fresh setup keeps a supplied goal. Repeating setup preserves the saved plan.
-- A regression test confirms recorded Codex host activity reaches the live dashboard.
+This documentation update puts the Codex quick start at the root of the plugin ZIP. It includes setup, installation, and first-world steps, with links to the official download and checksum.
 
-All 75 focused tests passed. The ZIP contains 395 verified files and passed the rule, media, and attribution checks.
+The default world goal and verified activity behavior introduced in 0.4.31 are included.
 
 [Installation guide](README.md#install-alife-worlds)

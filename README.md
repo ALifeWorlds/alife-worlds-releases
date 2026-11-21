@@ -8,14 +8,19 @@ Created by **Itzel Juarez**. [Explore ALife Worlds](https://alifeworlds.com/) ·
 
 Choose the app you use. Opening one guide closes the other.
 
+<table>
+<tr>
+<td width="50%" valign="top">
 <details name="alife-install-platform" open>
 <summary><strong>🟦 Codex</strong></summary>
 
-### 1. Set up Codex
+[Set up](#set-up-codex) · [Install](#install-the-codex-plugin) · [Create a world](#create-a-world-in-codex)
+
+### Set up Codex
 
 [Install the ChatGPT desktop app](https://learn.chatgpt.com/docs/app) and sign in. Open **Codex**, select **Local / This computer**, and choose the folder where you want your world to live. That's your project folder. Already using Codex? Open a chat in your local project.
 
-### 2. Install ALife Worlds
+### Install the Codex plugin
 
 Paste this message into that chat.
 
@@ -33,7 +38,7 @@ Wait for me to ask before creating a world or any agents.
 
 > **New to Codex?** You can start in regular ChatGPT for help. Use a **local Codex chat** to install the plugin.
 
-### 3. Create your first world
+### Create a world in Codex
 
 ```text
 Use $alife-worlds:create-world to make a moonlit pine village in this project.
@@ -41,20 +46,24 @@ Use $alife-worlds:create-world to make a moonlit pine village in this project.
 
 To use your own artwork, attach it in the project chat or share the path to your artwork folder.
 
-[Windows PowerShell guide](INSTALL.md#windows-powershell-fresh-install) · [Codex plugin 0.4.31](https://github.com/ALifeWorlds/alife-worlds-releases/releases/tag/v0.4.31) · [Codex commands](COMMANDS.md)
+[Windows PowerShell guide](INSTALL.md#windows-powershell-fresh-install) · [Codex plugin 0.4.32](https://github.com/ALifeWorlds/alife-worlds-releases/releases/tag/v0.4.32) · [Codex commands](COMMANDS.md)
 
 </details>
+</td>
+<td width="50%" valign="top">
 
 <details name="alife-install-platform">
 <summary><strong>🟧 Claude Code</strong></summary>
 
-### 1. Set up Claude
+[Set up](#set-up-claude-code) · [Install](#install-the-claude-code-plugin) · [Create a world](#create-a-world-in-claude-code)
+
+### Set up Claude Code
 
 [Install Claude Desktop](https://claude.com/download) and sign in with an account that has Claude Code access. Install [Node.js 20 or newer](https://nodejs.org/en/download), then reopen Claude.
 
-### 2. Install ALife Worlds
+### Install the Claude Code plugin
 
-[Download the Claude Code plugin ZIP](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.2.zip). In Claude Desktop, go to **Customize → Plugins → Add → Upload plugin** and select the ZIP. Open the **Code** tab, choose **Local**, and select your project folder.
+[Download the Claude Code plugin ZIP (0.1.3)](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.3.zip). In Claude Desktop, go to **Customize → Plugins → Add → Upload plugin** and select the ZIP. Open the **Code** tab, choose **Local**, and select your project folder.
 
 <details>
 <summary>Install from the terminal or ask Claude Code to help</summary>
@@ -89,7 +98,7 @@ Wait for me to ask before creating a world.
 
 </details>
 
-### 3. Create your first world
+### Create a world in Claude Code
 
 In your local project, send this message and open the browser link Claude returns.
 
@@ -103,6 +112,9 @@ To start with your artwork, tell Claude which files or folder to use.
 [Claude plugin checksum](packages/claude/SHA256SUMS) · [Claude Desktop plugin help](https://claude.com/docs/plugins/overview)
 
 </details>
+</td>
+</tr>
+</table>
 
 ## Check your version
 
