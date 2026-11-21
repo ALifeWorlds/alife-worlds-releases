@@ -68,7 +68,7 @@ To use your own artwork, attach it in the project chat or share the path to your
 
 #### Install the Claude Code plugin
 
-[Download the Claude ZIP (0.1.6)](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.6.zip). In Claude Desktop, go to **Customize → Plugins → Add → Upload plugin** and select the ZIP. Open the **Code** tab, choose **Local**, and select your project folder.
+[Download the Claude ZIP (0.1.7)](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.7.zip). In Claude Desktop, go to **Customize → Plugins → Add → Upload plugin** and select the ZIP. Open the **Code** tab, choose **Local**, and select your project folder.
 
 #### Terminal and chat options
 
