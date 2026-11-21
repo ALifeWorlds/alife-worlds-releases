@@ -11,8 +11,9 @@ Created by **Itzel Juarez**. [Explore ALife Worlds](https://alifeworlds.com/) ·
 
 <p>
   <a id="choose-codex"></a>
-  <kbd><strong>🟦 Codex</strong></kbd>
-  <a href="#user-content-choose-claude"><kbd>🟧 Claude Code</kbd></a>
+  <a href="#user-content-choose-codex"><img src=".github/readme/codex-tab.png" alt="Codex" width="110" height="34"></a>
+  &nbsp;
+  <a href="#user-content-choose-claude"><img src=".github/readme/claude-code-tab.png" alt="Claude Code" width="133" height="34"></a>
 </p>
 
 [Set up](#set-up-codex) · [Install](#install-the-codex-plugin) · [Create a world](#create-a-world-in-codex)
@@ -56,8 +57,9 @@ To use your own artwork, attach it in the project chat or share the path to your
 
 <p>
   <a id="choose-claude"></a>
-  <a href="#user-content-choose-codex"><kbd>🟦 Codex</kbd></a>
-  <kbd><strong>🟧 Claude Code</strong></kbd>
+  <a href="#user-content-choose-codex"><img src=".github/readme/codex-tab.png" alt="Codex" width="110" height="34"></a>
+  &nbsp;
+  <a href="#user-content-choose-claude"><img src=".github/readme/claude-code-tab.png" alt="Claude Code" width="133" height="34"></a>
 </p>
 
 [Set up](#set-up-claude-code) · [Install](#install-the-claude-code-plugin) · [Create a world](#create-a-world-in-claude-code)
