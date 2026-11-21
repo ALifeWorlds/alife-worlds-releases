@@ -9,12 +9,12 @@ Created by **Itzel Juarez**. [Explore ALife Worlds](https://alifeworlds.com/) ·
 <p>
   <a href="#user-content-choose-codex"><img src=".github/readme/codex-tab.png" alt="Codex" width="110" height="34"></a>
   &nbsp;
-  <a href="#user-content-choose-claude"><img src=".github/readme/claude-code-tab.png" alt="Claude Code" width="133" height="34"></a>
+  <a href="#user-content-choose-claude"><img src=".github/readme/claude-code-tab.png" alt="Claude" width="110" height="34"></a>
 </p>
 
 <a id="choose-codex"></a>
 
-### Install with Codex
+### <a href="#user-content-choose-codex"><img src=".github/readme/codex-section.png" alt="Install with Codex" width="320" height="44"></a>
 
 [Set up](#set-up-codex) · [Install](#install-the-codex-plugin) · [Create a world](#create-a-world-in-codex)
 
@@ -52,9 +52,11 @@ To use your own artwork, attach it in the project chat or share the path to your
 
 [Back to install choices](#install-alife-worlds)
 
+---
+
 <a id="choose-claude"></a>
 
-### Install with Claude Code
+### <a href="#user-content-choose-claude"><img src=".github/readme/claude-section.png" alt="Install with Claude" width="320" height="44"></a>
 
 [Set up](#set-up-claude-code) · [Install](#install-the-claude-code-plugin) · [Terminal and chat](#terminal-and-chat-options) · [Create a world](#create-a-world-in-claude-code)
 
@@ -91,7 +93,7 @@ Install ALife Worlds for Claude Code from this official GitHub repository.
 https://github.com/ALifeWorlds/alife-worlds-releases
 
 Check my current installation and whether Node.js 20 or newer is available.
-Use the terminal steps in the Claude Code section of the README to install
+Use the terminal steps in the Claude section of the README to install
 or update the plugin. Verify the result and tell me if I need a new session.
 Wait for me to ask before creating a world.
 ```

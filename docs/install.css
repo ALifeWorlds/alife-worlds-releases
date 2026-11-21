@@ -77,14 +77,16 @@ h1 {
 .tabs button[aria-selected="false"]:hover { text-decoration: underline; }
 
 .guide {
+  --guide-ink: #2457be;
   padding: clamp(1rem, 4vw, 2rem);
   border: 1px solid var(--border);
   border-radius: .7rem;
   background: #fff;
 }
 
+#guide-claude { --guide-ink: #a74324; }
 .guide h2, .guide h3 { line-height: 1.25; margin: 1.7em 0 .45em; }
-.guide h2 { font-size: 1.35rem; }
+.guide h2 { color: var(--guide-ink); font-size: 1.35rem; }
 .guide h3 { font-size: 1.1rem; }
 .guide p { margin: .6rem 0 1rem; }
 .guide > :last-child { margin-bottom: 0; }
