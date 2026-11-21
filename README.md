@@ -50,7 +50,7 @@ Use $alife-worlds:create-world to set up the bundled Anthill world in this proje
 
 To use your own artwork, attach it in the project chat or share the path to your artwork folder.
 
-[Windows PowerShell guide](INSTALL.md#windows-powershell-fresh-install) · [Download the Codex ZIP (0.4.32)](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.32/alife-worlds-0.4.32.zip) · [Codex commands](COMMANDS.md)
+[Windows PowerShell guide](INSTALL.md#windows-powershell-fresh-install) · [Download the Codex ZIP (0.4.33)](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.33/alife-worlds-0.4.33.zip) · [Codex commands](COMMANDS.md)
 
 [Back to install choices](#install-alife-worlds)
 
@@ -60,15 +60,27 @@ To use your own artwork, attach it in the project chat or share the path to your
 
 ### <a href="#user-content-choose-claude"><img src=".github/readme/claude-section.png" alt="Install with Claude" width="320" height="44"></a>
 
-[Set up](#set-up-claude-code) · [Install](#install-the-claude-code-plugin) · [Terminal and chat](#terminal-and-chat-options) · [Create a world](#create-a-world-in-claude-code)
+[Set up](#set-up-claude-code) · [Install](#install-the-claude-code-plugin) · [Terminal](#terminal-and-chat-options) · [Create a world](#create-a-world-in-claude-code) · [Your agents](#your-claude-agents) · [Update](#update-claude)
 
 #### Set up Claude Code
 
 [Install Claude Desktop](https://claude.com/download) and sign in with an account that has Claude Code access. Install [Node.js 20 or newer](https://nodejs.org/en/download), then reopen Claude.
 
+Run ALife Worlds in a **Local** session in the app’s **Code** tab. Regular Claude chats and Projects can help you plan your world.
+
 #### Install the Claude Code plugin
 
-[Download the Claude ZIP (0.1.7)](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.7.zip). In Claude Desktop, go to **Customize → Plugins → Add → Upload plugin** and select the ZIP. Open the **Code** tab, choose **Local**, and select your project folder.
+1. Open Claude’s **Code** tab and start a new **Local** session.
+2. Run these commands one at a time.
+
+   ```text
+   /plugin marketplace add ALifeWorlds/alife-worlds-releases
+   /plugin install alife-worlds@alife-worlds
+   ```
+
+3. Close and reopen Claude.
+
+To install by upload, [download the Claude ZIP (0.1.8)](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.8.zip) and select it under **Customize → Plugins → Add → Upload plugin**.
 
 #### Terminal and chat options
 
@@ -81,14 +93,7 @@ claude plugin install alife-worlds@alife-worlds
 
 Open your project folder and run `claude`. Type `/mcp` to check that ALife Worlds is connected.
 
-If a Claude Code terminal chat is already open, use its slash commands.
-
-```text
-/plugin marketplace add ALifeWorlds/alife-worlds-releases
-/plugin install alife-worlds@alife-worlds
-```
-
-Start a new session afterward. You can also paste this message into a local Claude Code chat.
+In a Claude Code chat, you can use the same two `/plugin` commands from the app steps. Start a new session afterward. You can also paste this message into a local Claude Code chat.
 
 ```text
 Install ALife Worlds for Claude Code from this official GitHub repository.
@@ -102,15 +107,33 @@ Wait for me to ask before creating a world.
 
 #### Create a world in Claude Code
 
-In your local Claude Code project, run this command by itself to start with the bundled Anthill. Open the browser link Claude returns.
+1. In Claude’s **Code** tab, start a new **Local** session.
+2. In the folder picker, choose **New folder**, name it **Anthill**, and select it.
+3. Run this command by itself to start with the bundled Anthill.
 
-```text
-/alife-worlds:start
-```
+   ```text
+   /alife-worlds:start
+   ```
 
-The setup creates the world and adds Director, World 1.0 and Agent Support to your project. To add your own artwork, tell Claude which files or folder to use. Run `/alife-worlds:commands` to see the available commands.
+4. Open the viewer link Claude returns. Your setup chat becomes **Director**.
 
-[Claude plugin checksum](packages/claude/SHA256SUMS) · [Claude Desktop plugin help](https://claude.com/docs/plugins/overview)
+For a custom world, include your idea, for example `/alife-worlds:start a moonlit pine village`. You can also tell Director which artwork files or folder to use.
+
+#### Your Claude agents
+
+Director, World 1.0 and Agent Support are saved in your project’s `alife-agents/` folder. Open the files there to read or edit them. Claude loads the edits the next time you start a chat in that folder. Type `/agents` for agent help, or ask Claude to list the agents in this project.
+
+#### Return to your Claude world
+
+Start a new **Local** session in the same folder. If the chat does not start as Director, run `/alife-worlds:start` again to reuse your existing world.
+
+#### Update Claude
+
+Run `/plugin marketplace update alife-worlds`, then start a new chat. If Claude offers **Update now** for ALife Worlds, select it first. For a ZIP installation, upload the current Claude ZIP.
+
+Run `/alife-worlds:commands` to see the available commands.
+
+[Full Claude setup guide](INSTALL-CLAUDE.md) · [Claude plugin checksum](packages/claude/SHA256SUMS) · [Claude Desktop plugin help](https://claude.com/docs/plugins/overview)
 
 [Back to install choices](#install-alife-worlds)
 

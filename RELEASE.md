@@ -1,7 +1,7 @@
-# ALife Worlds 0.4.32
+# ALife Worlds 0.4.33 for Codex
 
-This documentation update puts the Codex quick start at the root of the plugin ZIP. It includes setup, installation, and first-world steps, with links to the official download and checksum.
+The world launcher has clearer typography, grouped world controls, and a separate version and update area. The layout wraps in narrow Codex panels and supports light and dark themes.
 
-The default world goal and verified activity behavior introduced in 0.4.31 are included.
+The verified ZIP contains the 0.4.33 plugin. Use the current installation guide below for download links. The quick start bundled inside the sealed ZIP still refers to 0.4.32.
 
-[Installation guide](README.md#install-alife-worlds)
+[Installation guide](https://github.com/ALifeWorlds/alife-worlds-releases#install-alife-worlds)
