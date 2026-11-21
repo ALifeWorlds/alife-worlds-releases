@@ -1,103 +1,117 @@
 # ALife Worlds
 
-**Give your agents a world you can see.** Turn your ideas or artwork into a home for your team, a game, an interactive experience or a story. Your ideas set the boundaries.
+**See your agents at work in a world you create.** Start with an idea or artwork and make a home for your team, a game, or an interactive story. Your ideas set the boundaries.
 
-Created by **Itzel Juarez**. [Explore the website](https://alifeworlds.com/) · [See how it works](https://alifeworlds.com/how-it-works) · [Get help](https://alifeworlds.com/support/)
+Created by **Itzel Juarez**. [Explore ALife Worlds](https://alifeworlds.com/) · [Get help](https://alifeworlds.com/support/)
 
 ## Install ALife Worlds
 
-| **Codex · Primary** | [**Claude Code**](INSTALL-CLAUDE.md) |
-| --- | --- |
+Choose the app you use. Opening one guide closes the other.
 
-### Start here without a terminal
+<details name="alife-install-platform" open>
+<summary><strong>🟦 Codex</strong></summary>
 
-You do not need to understand GitHub, clone this repository or type terminal commands yourself. The easiest route is to let Codex handle the installation while you describe what you want.
+### 1. Set up Codex
 
-### 1. Get Codex ready
+[Install the ChatGPT desktop app](https://learn.chatgpt.com/docs/app) and sign in. Open **Codex**, select **Local / This computer**, and choose the folder where you want your world to live. That's your project folder. Already using Codex? Open a chat in your local project.
 
-1. **Install the desktop app** using [OpenAI's official download and setup guide](https://learn.chatgpt.com/docs/app), then sign in with your ChatGPT account.
-2. **Choose Codex** in the app. Select **Local / This computer**, rather than Cloud, and open the folder where you want your world to live. A project is simply that folder and its chats. See [OpenAI's quickstart](https://learn.chatgpt.com/docs/quickstart) if this is your first time.
-3. **Start a chat in that project** and paste the installation prompt below.
+### 2. Install ALife Worlds
 
-Already using Codex? Open your local project chat and go straight to the prompt.
-
-### 2. Ask ChatGPT or Codex to help you install
-
-Copy this whole message, including the GitHub link:
+Paste this message into that chat.
 
 ```text
-Help me install ALife Worlds from this official release repository:
+Install ALife Worlds for Codex from this official GitHub repository.
 https://github.com/ALifeWorlds/alife-worlds-releases
 
-I am new to Codex and do not want to type PowerShell commands myself.
-First check whether this chat can work with files on my computer. If it
-cannot, walk me through OpenAI's official desktop setup and give me this
-prompt to continue in a local Codex project chat.
+Check my current installation and update it if needed. Use the latest
+Codex release ZIP and its SHA-256 checksum. Follow INSTALL.md to verify
+and install it through Codex. Help me set up Node.js 20 or newer if needed.
 
-In local Codex, read the repository's README.md and INSTALL.md. Check for
-an existing ALife Worlds installation before making changes. Install the
-latest stable Codex release using its named plugin ZIP and SHA256SUMS, verify
-the checksum, and follow the documented Codex marketplace installation.
-Check the Node.js and Codex requirements and help install missing tools
-from their official sources if needed.
-
-Keep the downloaded setup files inside this project's folder. Preserve
-existing worlds, agents, settings and other plugins. Verify the installed
-version and available ALife Worlds commands, then tell me how to open it.
-Do not create a world or new agent chats until I ask.
+Keep my projects and settings intact. Tell me when the plugin is ready.
+Wait for me to ask before creating a world or any agents.
 ```
 
-**Starting in regular ChatGPT is fine for guidance.** A web chat without access to your computer cannot install this local plugin for you; continue in a local Codex chat for the installation. Giving ChatGPT the link alone does not install anything.
+> **New to Codex?** You can start in regular ChatGPT for help. Use a **local Codex chat** to install the plugin.
 
 ### 3. Create your first world
 
-After Codex confirms the plugin is installed, send this in the project where you want the world:
-
 ```text
-Use $alife-worlds:create-world to create an ALife World in this project.
-Help me choose a world for my agents, or a game, interactive experience
-or story. Start with my idea and explain the choices in plain language.
+Use $alife-worlds:create-world to make a moonlit pine village in this project.
 ```
 
-To use your own art, attach it in that same Codex chat or give Codex its folder path. Your project's artwork, world files, agent homes and ordinary working records stay with that project.
+To use your own artwork, attach it in the project chat or share the path to your artwork folder.
 
-## Option 2: install with PowerShell
+[Windows PowerShell guide](INSTALL.md#windows-powershell-fresh-install) · [Codex plugin 0.4.31](https://github.com/ALifeWorlds/alife-worlds-releases/releases/tag/v0.4.31) · [Codex commands](COMMANDS.md)
 
-Comfortable with Codex and a terminal? Follow the [Windows PowerShell installation steps](INSTALL.md#windows-powershell-fresh-install). They cover downloading the release, checking its checksum, registering a local marketplace and verifying the installed plugin.
+</details>
 
-You need Node.js 20 or newer and the Codex command available. This route uses a verified release ZIP; you do not need to build the plugin or clone the source repository. Existing installations should use the [update guidance](INSTALL.md#already-installed) instead of creating a second copy.
+<details name="alife-install-platform">
+<summary><strong>🟧 Claude Code</strong></summary>
 
-## Downloads and commands
+### 1. Set up Claude
 
-**[Latest Codex release](https://github.com/ALifeWorlds/alife-worlds-releases/releases/latest)** · [Codex plugin ZIP 0.4.23](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.23/alife-worlds-0.4.23.zip) · [Checksum](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.23/SHA256SUMS)
+[Install Claude Desktop](https://claude.com/download) and sign in with an account that has Claude Code access. Install [Node.js 20 or newer](https://nodejs.org/en/download), then reopen Claude.
 
-On the release page, choose **alife-worlds-0.4.23.zip** under Assets. GitHub's **Source code** downloads contain this distribution repository, not the installable plugin packet.
+### 2. Install ALife Worlds
 
-Type `/` in the Codex composer and search for an ALife Worlds command, or attach its full name such as `$alife-worlds:import`. [See all nine commands and what they do.](COMMANDS.md)
+[Download the Claude Code plugin ZIP](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.2.zip). In Claude Desktop, go to **Customize → Plugins → Add → Upload plugin** and select the ZIP. Open the **Code** tab, choose **Local**, and select your project folder.
 
-## Know which version you are using
+<details>
+<summary>Install from the terminal or ask Claude Code to help</summary>
 
-From version 0.4.23, the **ALife Worlds** view shows its plugin version above the world canvas. **Check for updates** looks for a newer stable public release. **Update available** opens that release's page; it does not install it automatically.
+If you prefer a terminal, follow the [Claude Code setup guide](https://code.claude.com/docs/en/quickstart) for your operating system. Install Node.js 20 or newer and reopen your terminal.
 
-Ask Director which plugin version your project uses, or use `/plugin version`. Project metadata keeps the original creation version and later verified runtime updates separately from world changes. An older 0.4.22 installation needs its first manual update before it can display the new notice. A GitHub push alone does not update Codex or guarantee a native marketplace badge.
+```sh
+claude plugin marketplace add ALifeWorlds/alife-worlds-releases
+claude plugin install alife-worlds@alife-worlds
+```
+
+Open your project folder and run `claude`. Type `/mcp` to check that ALife Worlds is connected.
+
+If a Claude Code terminal chat is already open, use its slash commands.
+
+```text
+/plugin marketplace add ALifeWorlds/alife-worlds-releases
+/plugin install alife-worlds@alife-worlds
+```
+
+Start a new session afterward. You can also paste this message into a local Claude Code chat.
+
+```text
+Install ALife Worlds for Claude Code from this official GitHub repository.
+https://github.com/ALifeWorlds/alife-worlds-releases
+
+Check my current installation and whether Node.js 20 or newer is available.
+Use the terminal steps in the Claude Code section of the README to install
+or update the plugin. Verify the result and tell me if I need a new session.
+Wait for me to ask before creating a world.
+```
+
+</details>
+
+### 3. Create your first world
+
+In your local project, send this message and open the browser link Claude returns.
+
+```text
+Use /alife-worlds:create-world to make a moonlit pine village in this project.
+Then open the ALife Worlds viewer.
+```
+
+To start with your artwork, tell Claude which files or folder to use.
+
+[Claude plugin checksum](packages/claude/SHA256SUMS) · [Claude Desktop plugin help](https://claude.com/docs/plugins/overview)
+
+</details>
+
+## Check your version
+
+In Codex, open **ALife Worlds** and look above the world canvas for the plugin version. **Check for updates** compares it with the latest public Codex release. Ask Director which version created your world and which version last ran it.
 
 ## Share a world or agent
 
-Want others to import something you made? [Prepare a community submission](https://github.com/ALifeWorlds/alife-worlds-releases/issues/new/choose) with your agent definition or world design, its license and import instructions. Keep private chats, credentials and project data out of submissions. Community submissions are reviewed before being described as official or compatible.
-
-Imported agents retain their explicit versions. Preparing an update preserves local changes and incoming improvements, with a choice for conflicts. Updating a running agent's instructions requires its separate supported adoption/readback workflow; preparing a definition does not complete that update.
+[Submit a world or agent](https://github.com/ALifeWorlds/alife-worlds-releases/issues/new/choose) with a license and instructions so others can try it. Keep private chats, project data, and credentials out of submissions.
 
 ## Help and license
 
 [Website support](https://alifeworlds.com/support/) · [Report an issue](https://github.com/ALifeWorlds/alife-worlds-releases/issues/new/choose) · [MIT license](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md)
-
-The plugin ZIP excludes website/Dot assets and artwork with unverified redistribution rights. The website is a separate distribution.
-
-<details>
-<summary>Release verification and older downloads</summary>
-
-The 0.4.23 packet passed 97 focused source checks and generated-rule/media gates. All 395 ZIP entries match the sealed packet, and the published ZIP/checksum were verified anonymously. Installation, visible host behavior and world activation have separate verification; this is not OpenAI directory approval.
-
-Earlier unqualified binary downloads were withdrawn. Historical plain-version tags retain sanitized documentation; use the current qualified release instead of an older cached packet.
-
-</details>

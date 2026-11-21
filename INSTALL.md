@@ -1,6 +1,6 @@
 # Install ALife Worlds
 
-Prefer not to use a terminal? Start with the [guided installation prompt in the README](README.md#2-option-1-ask-chatgpt-or-codex-to-help-you-install). Codex can perform the local setup for you. Regular ChatGPT can guide you into that local chat when it does not have access to your computer.
+For a guided install, open the [Codex instructions in the README](README.md#install-alife-worlds) and paste the installation prompt into your local Codex chat.
 
 ## Before you start
 
@@ -26,7 +26,7 @@ Everything downloaded below stays inside this folder's `.alife-worlds\plugin-ins
 
 ### 2. Download and verify the plugin
 
-This example installs the qualified **0.4.23** release. Keep its versioned folder after installation: the local marketplace points to it.
+This example installs **0.4.31**. Keep its versioned folder after installation because the local marketplace points to it.
 
 ```powershell
 $ErrorActionPreference = 'Stop'
@@ -40,7 +40,7 @@ if (@($alifeExisting.installed | Where-Object { $_.name -eq 'alife-worlds' }).Co
     throw 'ALife Worlds is already installed. Use the update guidance instead.'
 }
 
-$alifeVersion = '0.4.23'
+$alifeVersion = '0.4.31'
 $alifeInstallRoot = Join-Path (Get-Location).Path '.alife-worlds\plugin-install'
 if (Test-Path -LiteralPath $alifeInstallRoot) {
     throw 'This setup folder already exists. Preserve it and ask Codex to inspect it.'
@@ -97,7 +97,7 @@ if ($LASTEXITCODE -ne 0) { throw 'Plugin installation failed. Preserve the regis
 codex plugin list --marketplace alife-worlds-release --json
 ```
 
-The final result should report `alife-worlds@alife-worlds-release`, version `0.4.23`, installed and enabled. If your CLI offers different options, check `codex plugin --help` rather than editing its cache.
+The plugin list should show `alife-worlds@alife-worlds-release`, version `0.4.31`, as enabled. Run `codex plugin --help` to see the commands available in your version of Codex.
 
 ### 4. Open it and make a world
 
