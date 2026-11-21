@@ -6,12 +6,10 @@ Created by **Itzel Juarez**. [Explore ALife Worlds](https://alifeworlds.com/) ·
 
 ## Install ALife Worlds
 
-Open the interactive install guide for your app.
-
 <p>
-  <a href="https://alifeworlds.github.io/alife-worlds-releases/"><img src=".github/readme/codex-tab.png" alt="Codex" width="110" height="34"></a>
+  <a href="#user-content-choose-codex"><img src=".github/readme/codex-tab.png" alt="Codex" width="110" height="34"></a>
   &nbsp;
-  <a href="https://alifeworlds.github.io/alife-worlds-releases/#claude"><img src=".github/readme/claude-code-tab.png" alt="Claude Code" width="133" height="34"></a>
+  <a href="#user-content-choose-claude"><img src=".github/readme/claude-code-tab.png" alt="Claude Code" width="133" height="34"></a>
 </p>
 
 <a id="choose-codex"></a>
@@ -51,6 +49,8 @@ Use $alife-worlds:create-world to make a moonlit pine village in this project.
 To use your own artwork, attach it in the project chat or share the path to your artwork folder.
 
 [Windows PowerShell guide](INSTALL.md#windows-powershell-fresh-install) · [Codex plugin 0.4.32](https://github.com/ALifeWorlds/alife-worlds-releases/releases/tag/v0.4.32) · [Codex commands](COMMANDS.md)
+
+[Back to install choices](#install-alife-worlds)
 
 <a id="choose-claude"></a>
 
@@ -109,6 +109,8 @@ To start with your artwork, tell Claude which files or folder to use.
 
 [Claude plugin checksum](packages/claude/SHA256SUMS) · [Claude Desktop plugin help](https://claude.com/docs/plugins/overview)
 
+[Back to install choices](#install-alife-worlds)
+
 ## Check your version
 
 In Codex, open **ALife Worlds** and look above the world canvas for the plugin version. **Check for updates** compares it with the latest public Codex release. Ask Director which version created your world and which version last ran it.
@@ -119,4 +121,4 @@ In Codex, open **ALife Worlds** and look above the world canvas for the plugin v
 
 ## Help and license
 
-[Website support](https://alifeworlds.com/support/) · [Report an issue](https://github.com/ALifeWorlds/alife-worlds-releases/issues/new/choose) · [MIT license](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md)
+[Tabbed install guide](https://alifeworlds.github.io/alife-worlds-releases/) · [Website support](https://alifeworlds.com/support/) · [Report an issue](https://github.com/ALifeWorlds/alife-worlds-releases/issues/new/choose) · [MIT license](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md)
