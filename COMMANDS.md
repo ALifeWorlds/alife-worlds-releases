@@ -1,6 +1,6 @@
 # ALife Worlds commands
 
-Search these individual ALife Worlds skill entries in the Codex composer. Each has a short action description and an example prompt. The host may display the plugin namespace; the explicit form is $alife-worlds:import (and the corresponding name for each entry). An already-open chat may need its skill list refreshed.
+These workflows are ALife Worlds skills. To see the menu in a local Codex chat, send `Use $alife-worlds:commands to show the ALife Worlds command menu.` For an individual workflow, use its exact skill name, such as `$alife-worlds:import`. Codex controls which entries appear in its `/` menu, and availability varies by desktop version.
 
 | Command | What it does |
 | --- | --- |

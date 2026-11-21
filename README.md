@@ -48,7 +48,7 @@ Use $alife-worlds:create-world to make a moonlit pine village in this project.
 
 To use your own artwork, attach it in the project chat or share the path to your artwork folder.
 
-[Windows PowerShell guide](INSTALL.md#windows-powershell-fresh-install) · [Codex plugin 0.4.32](https://github.com/ALifeWorlds/alife-worlds-releases/releases/tag/v0.4.32) · [Codex commands](COMMANDS.md)
+[Windows PowerShell guide](INSTALL.md#windows-powershell-fresh-install) · [Download the Codex ZIP (0.4.32)](https://github.com/ALifeWorlds/alife-worlds-releases/releases/download/v0.4.32/alife-worlds-0.4.32.zip) · [Codex commands](COMMANDS.md)
 
 [Back to install choices](#install-alife-worlds)
 
@@ -66,7 +66,7 @@ To use your own artwork, attach it in the project chat or share the path to your
 
 #### Install the Claude Code plugin
 
-[Download the Claude Code plugin ZIP (0.1.3)](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.3.zip). In Claude Desktop, go to **Customize → Plugins → Add → Upload plugin** and select the ZIP. Open the **Code** tab, choose **Local**, and select your project folder.
+[Download the Claude ZIP (0.1.6)](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.6.zip). In Claude Desktop, go to **Customize → Plugins → Add → Upload plugin** and select the ZIP. Open the **Code** tab, choose **Local**, and select your project folder.
 
 #### Terminal and chat options
 
@@ -100,14 +100,13 @@ Wait for me to ask before creating a world.
 
 #### Create a world in Claude Code
 
-In your local project, send this message and open the browser link Claude returns.
+In your local Claude Code project, run this command and open the browser link Claude returns.
 
 ```text
-Use /alife-worlds:create-world to make a moonlit pine village in this project.
-Then open the ALife Worlds viewer.
+/alife-worlds:start a moonlit pine village
 ```
 
-To start with your artwork, tell Claude which files or folder to use.
+The setup creates the world and adds Director, World 1.0 and Agent Support to your project. To add your own artwork, tell Claude which files or folder to use. Run `/alife-worlds:commands` to see the available commands.
 
 [Claude plugin checksum](packages/claude/SHA256SUMS) · [Claude Desktop plugin help](https://claude.com/docs/plugins/overview)
 
