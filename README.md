@@ -6,23 +6,23 @@ Created by **Itzel Juarez**. [Explore ALife Worlds](https://alifeworlds.com/) ·
 
 ## Install ALife Worlds
 
-<details name="alife-install-platform" open>
-<summary><strong>Install with Codex</strong></summary>
-
 <p>
-  <a id="choose-codex"></a>
   <a href="#user-content-choose-codex"><img src=".github/readme/codex-tab.png" alt="Codex" width="110" height="34"></a>
   &nbsp;
   <a href="#user-content-choose-claude"><img src=".github/readme/claude-code-tab.png" alt="Claude Code" width="133" height="34"></a>
 </p>
 
+<a id="choose-codex"></a>
+
+### Install with Codex
+
 [Set up](#set-up-codex) · [Install](#install-the-codex-plugin) · [Create a world](#create-a-world-in-codex)
 
-### Set up Codex
+#### Set up Codex
 
 [Install the ChatGPT desktop app](https://learn.chatgpt.com/docs/app) and sign in. Open **Codex**, select **Local / This computer**, and choose the folder where you want your world to live. That's your project folder. Already using Codex? Open a chat in your local project.
 
-### Install the Codex plugin
+#### Install the Codex plugin
 
 Paste this message into that chat.
 
@@ -40,7 +40,7 @@ Wait for me to ask before creating a world or any agents.
 
 > **New to Codex?** You can start in regular ChatGPT for help. Use a **local Codex chat** to install the plugin.
 
-### Create a world in Codex
+#### Create a world in Codex
 
 ```text
 Use $alife-worlds:create-world to make a moonlit pine village in this project.
@@ -50,30 +50,21 @@ To use your own artwork, attach it in the project chat or share the path to your
 
 [Windows PowerShell guide](INSTALL.md#windows-powershell-fresh-install) · [Codex plugin 0.4.32](https://github.com/ALifeWorlds/alife-worlds-releases/releases/tag/v0.4.32) · [Codex commands](COMMANDS.md)
 
-</details>
+<a id="choose-claude"></a>
 
-<details name="alife-install-platform">
-<summary><strong>Install with Claude Code</strong></summary>
+### Install with Claude Code
 
-<p>
-  <a id="choose-claude"></a>
-  <a href="#user-content-choose-codex"><img src=".github/readme/codex-tab.png" alt="Codex" width="110" height="34"></a>
-  &nbsp;
-  <a href="#user-content-choose-claude"><img src=".github/readme/claude-code-tab.png" alt="Claude Code" width="133" height="34"></a>
-</p>
+[Set up](#set-up-claude-code) · [Install](#install-the-claude-code-plugin) · [Terminal and chat](#terminal-and-chat-options) · [Create a world](#create-a-world-in-claude-code)
 
-[Set up](#set-up-claude-code) · [Install](#install-the-claude-code-plugin) · [Create a world](#create-a-world-in-claude-code)
-
-### Set up Claude Code
+#### Set up Claude Code
 
 [Install Claude Desktop](https://claude.com/download) and sign in with an account that has Claude Code access. Install [Node.js 20 or newer](https://nodejs.org/en/download), then reopen Claude.
 
-### Install the Claude Code plugin
+#### Install the Claude Code plugin
 
 [Download the Claude Code plugin ZIP (0.1.3)](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.3.zip). In Claude Desktop, go to **Customize → Plugins → Add → Upload plugin** and select the ZIP. Open the **Code** tab, choose **Local**, and select your project folder.
 
-<details>
-<summary>Install from the terminal or ask Claude Code to help</summary>
+#### Terminal and chat options
 
 If you prefer a terminal, follow the [Claude Code setup guide](https://code.claude.com/docs/en/quickstart) for your operating system. Install Node.js 20 or newer and reopen your terminal.
 
@@ -103,9 +94,7 @@ or update the plugin. Verify the result and tell me if I need a new session.
 Wait for me to ask before creating a world.
 ```
 
-</details>
-
-### Create a world in Claude Code
+#### Create a world in Claude Code
 
 In your local project, send this message and open the browser link Claude returns.
 
@@ -117,8 +106,6 @@ Then open the ALife Worlds viewer.
 To start with your artwork, tell Claude which files or folder to use.
 
 [Claude plugin checksum](packages/claude/SHA256SUMS) · [Claude Desktop plugin help](https://claude.com/docs/plugins/overview)
-
-</details>
 
 ## Check your version
 
