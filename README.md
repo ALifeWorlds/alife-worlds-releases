@@ -6,10 +6,12 @@ Created by **Itzel Juarez**. [Explore ALife Worlds](https://alifeworlds.com/) ·
 
 ## Install ALife Worlds
 
+Open the interactive install guide for your app.
+
 <p>
-  <a href="#user-content-choose-codex"><img src=".github/readme/codex-tab.png" alt="Codex" width="110" height="34"></a>
+  <a href="https://alifeworlds.github.io/alife-worlds-releases/"><img src=".github/readme/codex-tab.png" alt="Codex" width="110" height="34"></a>
   &nbsp;
-  <a href="#user-content-choose-claude"><img src=".github/readme/claude-code-tab.png" alt="Claude Code" width="133" height="34"></a>
+  <a href="https://alifeworlds.github.io/alife-worlds-releases/#claude"><img src=".github/readme/claude-code-tab.png" alt="Claude Code" width="133" height="34"></a>
 </p>
 
 <a id="choose-codex"></a>
