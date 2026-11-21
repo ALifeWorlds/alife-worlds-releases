@@ -103,10 +103,10 @@ The plugin list should show `alife-worlds@alife-worlds-release`, version `0.4.32
 
 ### 4. Open it and make a world
 
-Start a new Codex chat in your chosen local project. Type `@create-world`, select the ALife Worlds skill, and describe your world. If the picker is unavailable, send this prompt.
+Start a new Codex chat in your chosen local project. Type `@create-world`, select the ALife Worlds skill, and ask to use the bundled Anthill. You can also send this prompt.
 
 ```text
-Use $alife-worlds:create-world to create an ALife World in this project.
+Use $alife-worlds:create-world to set up the bundled Anthill world in this project.
 ```
 
 Installation alone creates no world or agent team. To see help first, use `$alife-worlds:commands`. [All commands](COMMANDS.md).

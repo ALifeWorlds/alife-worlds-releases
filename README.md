@@ -42,10 +42,10 @@ Wait for me to ask before creating a world or any agents.
 
 #### Create a world in Codex
 
-Type `@create-world` in your local Codex chat and select the ALife Worlds skill. Describe what you want to make. You can also send this prompt.
+Type `@create-world` in your local Codex chat, select the ALife Worlds skill, and ask to use the bundled Anthill. You can also send this prompt.
 
 ```text
-Use $alife-worlds:create-world to make a moonlit pine village in this project.
+Use $alife-worlds:create-world to set up the bundled Anthill world in this project.
 ```
 
 To use your own artwork, attach it in the project chat or share the path to your artwork folder.
@@ -102,10 +102,10 @@ Wait for me to ask before creating a world.
 
 #### Create a world in Claude Code
 
-In your local Claude Code project, run this command and open the browser link Claude returns.
+In your local Claude Code project, run this command by itself to start with the bundled Anthill. Open the browser link Claude returns.
 
 ```text
-/alife-worlds:start a moonlit pine village
+/alife-worlds:start
 ```
 
 The setup creates the world and adds Director, World 1.0 and Agent Support to your project. To add your own artwork, tell Claude which files or folder to use. Run `/alife-worlds:commands` to see the available commands.

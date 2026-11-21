@@ -55,10 +55,10 @@ existing projects and plugins intact. Wait for me to ask before creating a world
 
 ## Make your first world
 
-Open a local Claude Code session in the folder for your world. Run this command with your world idea.
+Open a local Claude Code session in the folder for your world. Run this command by itself to start with the bundled Anthill.
 
 ```text
-/alife-worlds:start a moonlit pine village
+/alife-worlds:start
 ```
 
 Open the local viewer link Claude returns. Setup creates the world, adds Director, World 1.0 and Agent Support to the project, and starts the chat as Director. You can add your own artwork afterward by telling Director which local files or folder to use.
