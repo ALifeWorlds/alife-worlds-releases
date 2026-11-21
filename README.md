@@ -6,11 +6,14 @@ Created by **Itzel Juarez**. [Explore ALife Worlds](https://alifeworlds.com/) ·
 
 ## Install ALife Worlds
 
-[🟦 **Codex**](#user-content-choose-codex) · [🟧 **Claude Code**](#user-content-choose-claude)
-
 <details name="alife-install-platform" open>
 <summary><strong>Install with Codex</strong></summary>
-<a id="choose-codex"></a>
+
+<p>
+  <a id="choose-codex"></a>
+  <kbd><strong>🟦 Codex</strong></kbd>
+  <a href="#user-content-choose-claude"><kbd>🟧 Claude Code</kbd></a>
+</p>
 
 [Set up](#set-up-codex) · [Install](#install-the-codex-plugin) · [Create a world](#create-a-world-in-codex)
 
@@ -50,7 +53,12 @@ To use your own artwork, attach it in the project chat or share the path to your
 
 <details name="alife-install-platform">
 <summary><strong>Install with Claude Code</strong></summary>
-<a id="choose-claude"></a>
+
+<p>
+  <a id="choose-claude"></a>
+  <a href="#user-content-choose-codex"><kbd>🟦 Codex</kbd></a>
+  <kbd><strong>🟧 Claude Code</strong></kbd>
+</p>
 
 [Set up](#set-up-claude-code) · [Install](#install-the-claude-code-plugin) · [Create a world](#create-a-world-in-claude-code)
 
