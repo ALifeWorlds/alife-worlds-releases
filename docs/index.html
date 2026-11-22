@@ -114,10 +114,17 @@ Wait for me to ask before creating a world.</code></pre>
       <p>Start a new <strong>Local</strong> session in the same folder to reuse your world. To make that chat your Director, run <code>/alife-worlds:role director</code>.</p>
 
       <h3 id="claude-update">Update the plugin</h3>
-      <p>In Claude’s <strong>Code</strong> tab, run <code>/plugin marketplace update alife-worlds</code>. Select <strong>Update now</strong> for ALife Worlds in the installed plugin list if offered. Reopen Claude and start a new chat. If you installed from a ZIP, upload the latest Claude ZIP.</p>
-      <p>If you already installed ALife Worlds through the marketplace, use these commands in a terminal with the Claude Code CLI.</p>
+      <p>Claude can update ALife Worlds from GitHub when <strong>Auto-update</strong> is turned on for the <code>alife-worlds</code> marketplace. You can enable it in the marketplace’s menu under <strong>Marketplaces</strong> in the plugin manager.</p>
+      <ol>
+        <li>After a new version is published, give GitHub a minute or two.</li>
+        <li>Fully quit and reopen Claude, then start a <strong>new Local</strong> session in the <strong>Code</strong> tab and open your world folder.</li>
+        <li>Click <strong>+ → Plugins → Manage plugins</strong> and select <strong>ALife Worlds</strong> to see the installed version.</li>
+      </ol>
+      <p><strong>If the version didn’t change</strong>, enter <code>/plugin marketplace update alife-worlds</code> in your Code session if that command is available. Then open <strong>Manage plugins</strong>, select <strong>ALife Worlds</strong>, and choose <strong>Update now</strong> if offered. Start a new session after the update.</p>
+      <p><strong>PowerShell fallback on Windows.</strong> If Claude can’t apply the update in the app, open PowerShell with the Claude Code CLI and run these commands one at a time.</p>
       <pre tabindex="0"><code>claude plugin marketplace update alife-worlds
 claude plugin update alife-worlds@alife-worlds</code></pre>
+      <p>After the commands finish, reopen Claude and start a new Code session in your world folder. If you installed from a ZIP, upload the latest Claude ZIP instead.</p>
       <p>Use <code>/alife-worlds:commands</code> to see the available commands.</p>
     </section>
 

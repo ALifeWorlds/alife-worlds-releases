@@ -88,14 +88,22 @@ Start a new **Local** session in the same folder to reuse your world. To make th
 
 ## Update the plugin
 
-In Claude’s **Code** tab, run `/plugin marketplace update alife-worlds`. Select **Update now** for ALife Worlds in the installed plugin list if offered. Reopen Claude and start a new chat. If you installed from a ZIP, upload the latest Claude ZIP.
+Claude can update ALife Worlds from GitHub when **Auto-update** is turned on for the `alife-worlds` marketplace. You can enable it in the marketplace’s menu under **Marketplaces** in the plugin manager.
 
-If you already installed ALife Worlds through the marketplace, use these commands in a terminal with the Claude Code CLI.
+1. After a new version is published, give GitHub a minute or two.
+2. Fully quit and reopen Claude, then start a **new Local** session in the **Code** tab and open your world folder.
+3. Click **+ → Plugins → Manage plugins** and select **ALife Worlds** to see the installed version.
 
-```sh
+**If the version didn’t change**, enter `/plugin marketplace update alife-worlds` in your Code session if that command is available. Then open **Manage plugins**, select **ALife Worlds**, and choose **Update now** if offered. Start a new session after the update.
+
+**PowerShell fallback on Windows.** If Claude can’t apply the update in the app, open PowerShell with the Claude Code CLI and run these commands one at a time.
+
+```powershell
 claude plugin marketplace update alife-worlds
 claude plugin update alife-worlds@alife-worlds
 ```
+
+After the commands finish, reopen Claude and start a new Code session in your world folder. If you installed from a ZIP, upload the latest Claude ZIP instead.
 
 [Claude Code plugin updates](https://code.claude.com/docs/en/discover-plugins#update-plugins-now)
 
