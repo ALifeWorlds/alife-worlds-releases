@@ -80,7 +80,7 @@ Run ALife Worlds in a **Local** session in the app’s **Code** tab. Regular Cla
 
 3. Close and reopen Claude.
 
-To install by upload, [download the Claude ZIP (0.1.14)](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.14.zip) and select it under **Customize → Plugins → Add → Upload plugin**.
+To install by upload, [download the Claude ZIP (0.1.15)](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.15.zip) and select it under **Customize → Plugins → Add → Upload plugin**.
 
 #### Terminal and chat options
 
@@ -119,7 +119,7 @@ Wait for me to ask before creating a world.
    /alife-worlds:start
    ```
 
-4. Open the viewer link Claude returns. Your setup chat becomes **Director**.
+4. Your setup chat becomes **Director**. For a new world, **Agent Support** opens the **World 1.0** chat. **World 1.0** sets up the world and shares the viewer link. When it finishes, return to Director and say **review**.
 
 Director, Agent Support and World 1.0 use separate chats in the same project. If a role chat does not open automatically, start a new **Local** chat in that folder when Director or Agent Support asks.
 

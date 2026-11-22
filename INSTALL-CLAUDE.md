@@ -2,7 +2,7 @@
 
 [View both installation options](README.md#install-alife-worlds)
 
-ALife Worlds 0.1.14 runs in a local Claude Code project. You can use the Code tab in Claude Desktop or the Claude Code terminal. Both routes need [Node.js 20 or newer](https://nodejs.org/en/download). Reopen your app or terminal after installing Node.js.
+ALife Worlds 0.1.15 runs in a local Claude Code project. You can use the Code tab in Claude Desktop or the Claude Code terminal. Both routes need [Node.js 20 or newer](https://nodejs.org/en/download). Reopen your app or terminal after installing Node.js.
 
 [Claude app](#install-in-the-claude-app) · [Terminal](#install-from-the-terminal) · [First world](#make-your-first-world) · [Your agents](#your-agents) · [Update](#update-the-plugin)
 
@@ -22,7 +22,7 @@ Use the app’s **Code** tab for the plugin. Regular Claude chats and Projects c
 
 3. Close and reopen Claude.
 
-To install by upload, [download the Claude ZIP (0.1.14)](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.14.zip), then select it under **Customize → Plugins → Add → Upload plugin**. Check for ALife Worlds in **+ → Plugins** or **Customize**. [Claude Code in the desktop app](https://code.claude.com/docs/en/desktop#install-plugins)
+To install by upload, [download the Claude ZIP (0.1.15)](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.15.zip), then select it under **Customize → Plugins → Add → Upload plugin**. Check for ALife Worlds in **+ → Plugins** or **Customize**. [Claude Code in the desktop app](https://code.claude.com/docs/en/desktop#install-plugins)
 
 ## Install from the terminal
 
@@ -70,7 +70,7 @@ existing projects and plugins intact. Wait for me to ask before creating a world
    /alife-worlds:start
    ```
 
-4. Open the local viewer link Claude returns. This chat becomes your **Director**.
+4. Your setup chat becomes **Director**. For a new world, **Agent Support** opens the **World 1.0** chat. **World 1.0** sets up the world and shares the viewer link. When it finishes, return to Director and say **review**.
 
 Director, Agent Support and World 1.0 use separate chats in the same project. If a role chat does not open automatically, start a new **Local** chat in that folder when Director or Agent Support asks.
 
@@ -109,4 +109,4 @@ After the commands finish, reopen Claude and start a new Code session in your wo
 
 Use `/alife-worlds:commands` to see the plugin's slash commands.
 
-[Download the Claude ZIP (0.1.14)](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.14.zip) · [SHA-256 checksum](packages/claude/SHA256SUMS) · [Get help](https://alifeworlds.com/support/)
+[Download the Claude ZIP (0.1.15)](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.15.zip) · [SHA-256 checksum](packages/claude/SHA256SUMS) · [Get help](https://alifeworlds.com/support/)
