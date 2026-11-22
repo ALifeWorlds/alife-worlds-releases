@@ -84,7 +84,11 @@ To install by upload, [download the Claude ZIP (0.1.14)](https://raw.githubuserc
 
 #### Terminal and chat options
 
-If you prefer a terminal, follow the [Claude Code setup guide](https://code.claude.com/docs/en/quickstart) for your operating system. Install Node.js 20 or newer and reopen your terminal.
+Install the [Claude Code CLI](https://code.claude.com/docs/en/quickstart) and Node.js 20 or newer to use the terminal commands.
+
+On Windows, if PowerShell cannot find `claude`, run `winget install Anthropic.ClaudeCode` to install the Claude Code CLI. Open a new PowerShell window, then run `claude --version`. If WinGet is unavailable, use the Windows steps in the [Claude Code setup guide](https://code.claude.com/docs/en/setup#install-on-native-windows).
+
+For a first-time ALife Worlds installation, run these commands one at a time. Copy each line without a trailing backslash.
 
 ```sh
 claude plugin marketplace add ALifeWorlds/alife-worlds-releases
@@ -135,7 +139,7 @@ Start a new **Local** session in the same folder to reuse your world. To make th
 
 In Claude’s **Code** tab, run `/plugin marketplace update alife-worlds`. Select **Update now** for ALife Worlds in the installed plugin list if offered. Reopen Claude and start a new chat. If you installed from a ZIP, upload the latest Claude ZIP.
 
-From a terminal, run:
+If you already installed ALife Worlds through the marketplace, use these commands in a terminal with the Claude Code CLI.
 
 ```sh
 claude plugin marketplace update alife-worlds
