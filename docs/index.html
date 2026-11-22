@@ -76,7 +76,7 @@ Wait for me to ask before creating a world or any agents.</code></pre>
       <pre tabindex="0"><code>/plugin marketplace add ALifeWorlds/alife-worlds-releases
 /plugin install alife-worlds@alife-worlds</code></pre>
       <p>Close and reopen Claude.</p>
-      <p>To install by upload, <a href="https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.8.zip">download the Claude ZIP (0.1.8)</a>, then select it under <strong>Customize → Plugins → Add → Upload plugin</strong>.</p>
+      <p>To install by upload, <a href="https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.13.zip">download the Claude ZIP (0.1.13)</a>, then select it under <strong>Customize → Plugins → Add → Upload plugin</strong>.</p>
       <p><a href="https://github.com/ALifeWorlds/alife-worlds-releases/blob/main/packages/claude/SHA256SUMS">Claude Code plugin checksum</a></p>
 
       <h3 id="claude-terminal">Terminal and chat options</h3>
@@ -97,16 +97,20 @@ Wait for me to ask before creating a world.</code></pre>
       <p>In Claude’s <strong>Code</strong> tab, start a new <strong>Local</strong> session. In the folder picker, choose <strong>New folder</strong>, name it <strong>Anthill</strong>, and select it. Run this command by itself to start with the bundled Anthill.</p>
       <pre tabindex="0"><code>/alife-worlds:start</code></pre>
       <p>Open the viewer link Claude returns. This chat becomes your <strong>Director</strong>.</p>
+      <p>Director, Agent Support and World 1.0 use separate chats in the same project. If a role chat does not open automatically, start a new <strong>Local</strong> chat in that folder when Director or Agent Support asks.</p>
       <p>For a custom world, add an idea, for example <code>/alife-worlds:start a moonlit pine village</code>. To add your own artwork, tell Director which files or folder to use.</p>
 
       <h3 id="claude-agents">Your agents</h3>
       <p>Director, World 1.0 and Agent Support are saved in your project’s <code>alife-agents/</code> folder. Edit them there and start a new chat in the same folder to use your edits. Type <code>/agents</code> for agent help, or ask Claude to list your project’s agents.</p>
 
       <h3 id="claude-return">Coming back later</h3>
-      <p>Start a new <strong>Local</strong> session in the same folder. If it does not start as Director, run <code>/alife-worlds:start</code> again to reuse your existing world.</p>
+      <p>Start a new <strong>Local</strong> session in the same folder to reuse your world. To make that chat your Director, run <code>/alife-worlds:role director</code>.</p>
 
       <h3 id="claude-update">Update the plugin</h3>
-      <p>Run <code>/plugin marketplace update alife-worlds</code>, then start a new chat. If Claude offers <strong>Update now</strong> for ALife Worlds, select it first. For a ZIP installation, upload the latest Claude ZIP.</p>
+      <p>In Claude’s <strong>Code</strong> tab, run <code>/plugin marketplace update alife-worlds</code>. Select <strong>Update now</strong> for ALife Worlds in the installed plugin list if offered. Reopen Claude and start a new chat. If you installed from a ZIP, upload the latest Claude ZIP.</p>
+      <p>From a terminal, run:</p>
+      <pre tabindex="0"><code>claude plugin marketplace update alife-worlds
+claude plugin update alife-worlds@alife-worlds</code></pre>
       <p>Use <code>/alife-worlds:commands</code> to see the available commands.</p>
     </section>
 

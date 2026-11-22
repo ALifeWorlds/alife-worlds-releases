@@ -80,7 +80,7 @@ Run ALife Worlds in a **Local** session in the app’s **Code** tab. Regular Cla
 
 3. Close and reopen Claude.
 
-To install by upload, [download the Claude ZIP (0.1.8)](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.8.zip) and select it under **Customize → Plugins → Add → Upload plugin**.
+To install by upload, [download the Claude ZIP (0.1.13)](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.13.zip) and select it under **Customize → Plugins → Add → Upload plugin**.
 
 #### Terminal and chat options
 
@@ -117,6 +117,8 @@ Wait for me to ask before creating a world.
 
 4. Open the viewer link Claude returns. Your setup chat becomes **Director**.
 
+Director, Agent Support and World 1.0 use separate chats in the same project. If a role chat does not open automatically, start a new **Local** chat in that folder when Director or Agent Support asks.
+
 For a custom world, include your idea, for example `/alife-worlds:start a moonlit pine village`. You can also tell Director which artwork files or folder to use.
 
 #### Your Claude agents
@@ -125,11 +127,18 @@ Director, World 1.0 and Agent Support are saved in your project’s `alife-agent
 
 #### Return to your Claude world
 
-Start a new **Local** session in the same folder. If the chat does not start as Director, run `/alife-worlds:start` again to reuse your existing world.
+Start a new **Local** session in the same folder to reuse your world. To make that chat your Director, run `/alife-worlds:role director`.
 
 #### Update Claude
 
-Run `/plugin marketplace update alife-worlds`, then start a new chat. If Claude offers **Update now** for ALife Worlds, select it first. For a ZIP installation, upload the current Claude ZIP.
+In Claude’s **Code** tab, run `/plugin marketplace update alife-worlds`. Select **Update now** for ALife Worlds in the installed plugin list if offered. Reopen Claude and start a new chat. If you installed from a ZIP, upload the latest Claude ZIP.
+
+From a terminal, run:
+
+```sh
+claude plugin marketplace update alife-worlds
+claude plugin update alife-worlds@alife-worlds
+```
 
 Run `/alife-worlds:commands` to see the available commands.
 
