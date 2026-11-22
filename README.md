@@ -80,7 +80,7 @@ Run ALife Worlds in a **Local** session in the app’s **Code** tab. Regular Cla
 
 3. Close and reopen Claude.
 
-To install by upload, [download the Claude ZIP (0.1.13)](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.13.zip) and select it under **Customize → Plugins → Add → Upload plugin**.
+To install by upload, [download the Claude ZIP (0.1.14)](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.14.zip) and select it under **Customize → Plugins → Add → Upload plugin**.
 
 #### Terminal and chat options
 
@@ -107,9 +107,9 @@ Wait for me to ask before creating a world.
 
 #### Create a world in Claude Code
 
-1. In Claude’s **Code** tab, start a new **Local** session.
-2. In the folder picker, choose **New folder**, name it **Anthill**, and select it.
-3. Run this command by itself to start with the bundled Anthill.
+1. Create a folder on your computer, such as **Anthill**, or choose an existing folder for your world.
+2. In Claude’s **Code** tab, start a **Local** session and use the folder picker to open that folder. Your world and role notes will be saved there.
+3. With the folder open, run this command by itself to start with the bundled Anthill.
 
    ```text
    /alife-worlds:start
@@ -123,7 +123,9 @@ For a custom world, include your idea, for example `/alife-worlds:start a moonli
 
 #### Your Claude agents
 
-Director, World 1.0 and Agent Support are saved in your project’s `alife-agents/` folder. Open the files there to read or edit them. Claude loads the edits the next time you start a chat in that folder. Type `/agents` for agent help, or ask Claude to list the agents in this project.
+Director, World 1.0 and Agent Support each have a role file in your project’s `alife-agents/` folder. Add your edits under **Project notes** in the role’s file. The notes become part of that role’s instructions in its next chat.
+
+If you’re upgrading from an older version, converted role files are saved in `alife-agents/previous/`. Copy any instructions you want to keep using into **Project notes**.
 
 #### Return to your Claude world
 

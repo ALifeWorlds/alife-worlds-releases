@@ -2,7 +2,7 @@
 
 [View both installation options](README.md#install-alife-worlds)
 
-ALife Worlds 0.1.13 runs in a local Claude Code project. You can use the Code tab in Claude Desktop or the Claude Code terminal. Both routes need [Node.js 20 or newer](https://nodejs.org/en/download). Reopen your app or terminal after installing Node.js.
+ALife Worlds 0.1.14 runs in a local Claude Code project. You can use the Code tab in Claude Desktop or the Claude Code terminal. Both routes need [Node.js 20 or newer](https://nodejs.org/en/download). Reopen your app or terminal after installing Node.js.
 
 [Claude app](#install-in-the-claude-app) · [Terminal](#install-from-the-terminal) · [First world](#make-your-first-world) · [Your agents](#your-agents) · [Update](#update-the-plugin)
 
@@ -22,7 +22,7 @@ Use the app’s **Code** tab for the plugin. Regular Claude chats and Projects c
 
 3. Close and reopen Claude.
 
-To install by upload, [download the Claude ZIP (0.1.13)](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.13.zip), then select it under **Customize → Plugins → Add → Upload plugin**. Check for ALife Worlds in **+ → Plugins** or **Customize**. [Claude Code in the desktop app](https://code.claude.com/docs/en/desktop#install-plugins)
+To install by upload, [download the Claude ZIP (0.1.14)](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.14.zip), then select it under **Customize → Plugins → Add → Upload plugin**. Check for ALife Worlds in **+ → Plugins** or **Customize**. [Claude Code in the desktop app](https://code.claude.com/docs/en/desktop#install-plugins)
 
 ## Install from the terminal
 
@@ -59,9 +59,9 @@ existing projects and plugins intact. Wait for me to ask before creating a world
 
 ## Make your first world
 
-1. Open the **Code** tab and start a new **Local** session.
-2. Click the folder picker, choose **New folder**, name it **Anthill**, and select it.
-3. Run this command by itself to start with the bundled Anthill.
+1. Create a folder on your computer, such as **Anthill**, or choose an existing folder for your world.
+2. In Claude’s **Code** tab, start a **Local** session and use the folder picker to open that folder. Your world and role notes will be saved there.
+3. With the folder open, run this command by itself to start with the bundled Anthill.
 
    ```text
    /alife-worlds:start
@@ -75,7 +75,9 @@ For a custom world, add your own idea. For example, run `/alife-worlds:start a m
 
 ## Your agents
 
-Director, World 1.0 and Agent Support are saved under `alife-agents/` in your project folder. Open those files to read or edit the agents. ALife Worlds syncs its managed copies into `.claude/agents/` when a new chat starts, so edits apply in the next chat. Type `/agents` for agent help, or ask Claude to list your project’s agents. [Claude Code agents](https://code.claude.com/docs/en/sub-agents)
+Director, World 1.0 and Agent Support each have a role file in your project’s `alife-agents/` folder. Add your edits under **Project notes** in the role’s file. The notes become part of that role’s instructions in its next chat.
+
+If you’re upgrading from an older version, converted role files are saved in `alife-agents/previous/`. Copy any instructions you want to keep using into **Project notes**.
 
 ## Coming back later
 
@@ -96,4 +98,4 @@ claude plugin update alife-worlds@alife-worlds
 
 Use `/alife-worlds:commands` to see the plugin's slash commands.
 
-[Download the Claude ZIP (0.1.13)](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.13.zip) · [SHA-256 checksum](packages/claude/SHA256SUMS) · [Get help](https://alifeworlds.com/support/)
+[Download the Claude ZIP (0.1.14)](https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.14.zip) · [SHA-256 checksum](packages/claude/SHA256SUMS) · [Get help](https://alifeworlds.com/support/)
