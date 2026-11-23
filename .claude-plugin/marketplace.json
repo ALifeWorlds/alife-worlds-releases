@@ -8,11 +8,11 @@
     {
       "name": "alife-worlds",
       "description": "Give your Claude Code agents a shared visual world with a local Sprints dashboard.",
-      "version": "0.1.19",
+      "version": "0.1.20",
       "source": {
         "source": "archive",
-        "url": "https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.19.zip",
-        "sha256": "7375e6c6a0e64c409067c87d8f10b9413f90ddc3176d2664a7c02cafe5327de1"
+        "url": "https://raw.githubusercontent.com/ALifeWorlds/alife-worlds-releases/main/packages/claude/alife-worlds-claude-0.1.20.zip",
+        "sha256": "5bc3a13e531838ceb1c7c5a7b478a870413411b120d8ff6fed8e4457bc364555"
       }
     }
   ]
