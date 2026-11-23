@@ -1,5 +1,7 @@
 # Install ALife Worlds for Claude Code
 
+**Early access.** The Claude edition is still in development. Features and setup steps may change between releases.
+
 [View both installation options](README.md#install-alife-worlds)
 
 ALife Worlds 0.1.20 runs in a local Claude Code project. You can use the Code tab in Claude Desktop or the Claude Code terminal. Both routes need [Node.js 20 or newer](https://nodejs.org/en/download). Reopen your app or terminal after installing Node.js.

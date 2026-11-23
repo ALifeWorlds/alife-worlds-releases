@@ -60,6 +60,8 @@ To use your own artwork, attach it in the project chat or share the path to your
 
 ### <a href="#user-content-choose-claude"><img src=".github/readme/claude-section.png" alt="Install with Claude" width="320" height="44"></a>
 
+**Early access.** The Claude edition is still in development. Features and setup steps may change between releases.
+
 [Set up](#set-up-claude-code) · [Install](#install-the-claude-code-plugin) · [Terminal](#terminal-and-chat-options) · [Create a world](#create-a-world-in-claude-code) · [Your agents](#your-claude-agents) · [Update](#update-claude)
 
 #### Set up Claude Code
